@@ -1,0 +1,346 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1967AF9120D96F480043C0E7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1967AF9020D96F480043C0E7 /* ViewController.swift */; };
+		1967AFA920D96F7C0043C0E7 /* Throttler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1967AFA120D96F7C0043C0E7 /* Throttler.swift */; };
+		1967AFAC20D96F7C0043C0E7 /* AutomaticStatusBarAppearanceUpdater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1967AFA420D96F7C0043C0E7 /* AutomaticStatusBarAppearanceUpdater.swift */; };
+		1967AFAE20D96F7C0043C0E7 /* UIKitSwizzling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1967AFA720D96F7C0043C0E7 /* UIKitSwizzling.swift */; };
+		1967AFAF20D96F7C0043C0E7 /* UIViewController+Bartinter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1967AFA820D96F7C0043C0E7 /* UIViewController+Bartinter.swift */; };
+		1967AFB220D970180043C0E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1967AFB120D970180043C0E7 /* AppDelegate.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1967AF8B20D96F480043C0E7 /* Bartinter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bartinter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1967AF9020D96F480043C0E7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1967AF9A20D96F4A0043C0E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1967AFA120D96F7C0043C0E7 /* Throttler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Throttler.swift; sourceTree = "<group>"; };
+		1967AFA420D96F7C0043C0E7 /* AutomaticStatusBarAppearanceUpdater.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutomaticStatusBarAppearanceUpdater.swift; sourceTree = "<group>"; };
+		1967AFA720D96F7C0043C0E7 /* UIKitSwizzling.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIKitSwizzling.swift; sourceTree = "<group>"; };
+		1967AFA820D96F7C0043C0E7 /* UIViewController+Bartinter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Bartinter.swift"; sourceTree = "<group>"; };
+		1967AFB120D970180043C0E7 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1967AF8820D96F480043C0E7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1967AF8220D96F480043C0E7 = {
+			isa = PBXGroup;
+			children = (
+				1967AF8D20D96F480043C0E7 /* Bartinter */,
+				1967AF8C20D96F480043C0E7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1967AF8C20D96F480043C0E7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1967AF8B20D96F480043C0E7 /* Bartinter.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1967AF8D20D96F480043C0E7 /* Bartinter */ = {
+			isa = PBXGroup;
+			children = (
+				1967AFB020D96F9A0043C0E7 /* Source */,
+				1967AFB120D970180043C0E7 /* AppDelegate.swift */,
+				1967AF9020D96F480043C0E7 /* ViewController.swift */,
+				1967AF9A20D96F4A0043C0E7 /* Info.plist */,
+			);
+			path = Bartinter;
+			sourceTree = "<group>";
+		};
+		1967AFA020D96F7C0043C0E7 /* Throttler */ = {
+			isa = PBXGroup;
+			children = (
+				1967AFA120D96F7C0043C0E7 /* Throttler.swift */,
+			);
+			path = Throttler;
+			sourceTree = "<group>";
+		};
+		1967AFA620D96F7C0043C0E7 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				1967AFA720D96F7C0043C0E7 /* UIKitSwizzling.swift */,
+				1967AFA820D96F7C0043C0E7 /* UIViewController+Bartinter.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		1967AFB020D96F9A0043C0E7 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				1967AFA020D96F7C0043C0E7 /* Throttler */,
+				1967AFA620D96F7C0043C0E7 /* Extensions */,
+				1967AFA420D96F7C0043C0E7 /* AutomaticStatusBarAppearanceUpdater.swift */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1967AF8A20D96F480043C0E7 /* Bartinter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1967AF9D20D96F4A0043C0E7 /* Build configuration list for PBXNativeTarget "Bartinter" */;
+			buildPhases = (
+				1967AF8720D96F480043C0E7 /* Sources */,
+				1967AF8820D96F480043C0E7 /* Frameworks */,
+				1967AF8920D96F480043C0E7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Bartinter;
+			productName = Bartinter;
+			productReference = 1967AF8B20D96F480043C0E7 /* Bartinter.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1967AF8320D96F480043C0E7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Maxim Kotliar";
+				TargetAttributes = {
+					1967AF8A20D96F480043C0E7 = {
+						CreatedOnToolsVersion = 9.4;
+					};
+				};
+			};
+			buildConfigurationList = 1967AF8620D96F480043C0E7 /* Build configuration list for PBXProject "Bartinter" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1967AF8220D96F480043C0E7;
+			productRefGroup = 1967AF8C20D96F480043C0E7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1967AF8A20D96F480043C0E7 /* Bartinter */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1967AF8920D96F480043C0E7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1967AF8720D96F480043C0E7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1967AFB220D970180043C0E7 /* AppDelegate.swift in Sources */,
+				1967AF9120D96F480043C0E7 /* ViewController.swift in Sources */,
+				1967AFAF20D96F7C0043C0E7 /* UIViewController+Bartinter.swift in Sources */,
+				1967AFA920D96F7C0043C0E7 /* Throttler.swift in Sources */,
+				1967AFAE20D96F7C0043C0E7 /* UIKitSwizzling.swift in Sources */,
+				1967AFAC20D96F7C0043C0E7 /* AutomaticStatusBarAppearanceUpdater.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1967AF9B20D96F4A0043C0E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1967AF9C20D96F4A0043C0E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1967AF9E20D96F4A0043C0E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Bartinter/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.maximkotliar.Bartinter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1967AF9F20D96F4A0043C0E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Bartinter/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.maximkotliar.Bartinter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1967AF8620D96F480043C0E7 /* Build configuration list for PBXProject "Bartinter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1967AF9B20D96F4A0043C0E7 /* Debug */,
+				1967AF9C20D96F4A0043C0E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1967AF9D20D96F4A0043C0E7 /* Build configuration list for PBXNativeTarget "Bartinter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1967AF9E20D96F4A0043C0E7 /* Debug */,
+				1967AF9F20D96F4A0043C0E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1967AF8320D96F480043C0E7 /* Project object */;
+}
