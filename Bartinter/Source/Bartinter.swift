@@ -1,48 +1,59 @@
 //
 //  Bartinter.swift
-//  Yoga
 //
 //  Created by Maxim Kotliar on 6/15/18.
-//  Copyright © 2018 Wikrgroup. All rights reserved.
 //
 
 import UIKit
 import CoreImage
 
-extension Bartinter {
+public extension Bartinter {
 
-    struct Configuration {
-        static var defaultAnimationDuration: TimeInterval = 0.2
-        static var defaultThrottleDelay: TimeInterval = 0.2
-        static var defaultAnimationType: UIStatusBarAnimation = .fade
-        static var defaultMidPoint: CGFloat = 0.5
-        static var defaultAntiFlickRange: CGFloat = 0.1
+    public struct Configuration {
+        public static var defaultAnimationDuration: TimeInterval = 0.2
+        public static var defaultThrottleDelay: TimeInterval = 0.2
+        public static var defaultAnimationType: UIStatusBarAnimation = .fade
+        public static var defaultMidPoint: CGFloat = 0.5
+        public static var defaultAntiFlickRange: CGFloat = 0.1
 
         var animationDuration = defaultAnimationDuration
         var animationType = defaultAnimationType
         var midPoint = defaultMidPoint
         var antiFlickRange = defaultAntiFlickRange
         var throttleDelay = defaultThrottleDelay
+
+        public init(animationDuration: TimeInterval = defaultAnimationDuration,
+                    animationType: UIStatusBarAnimation = defaultAnimationType,
+                    midPoint: CGFloat  = defaultMidPoint,
+                    antiFlickRange: CGFloat = defaultAntiFlickRange,
+                    throttleDelay: TimeInterval = defaultThrottleDelay) {
+            self.animationDuration = animationDuration
+            self.animationType = animationType
+            self.midPoint = midPoint
+            self.antiFlickRange = antiFlickRange
+            self.throttleDelay = throttleDelay
+        }
     }
 }
 
-final class Bartinter: UIViewController {
+public final class Bartinter: UIViewController {
 
-    var configuration: Configuration {
+    public var configuration: Configuration {
         didSet {
             throttler.maxInterval = configuration.throttleDelay
         }
     }
+
     private lazy var throttler = {
         return Throttler(interval: self.configuration.throttleDelay)
     }()
 
-    init(_ configuration: Configuration = Configuration()) {
+    public init(_ configuration: Configuration = Configuration()) {
         self.configuration = configuration
         super.init(nibName: nil, bundle: nil)
     }
 
-    required init?(coder aDecoder: NSCoder) {
+    public required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
 
@@ -72,11 +83,11 @@ final class Bartinter: UIViewController {
         }
     }
 
-    override var preferredStatusBarStyle: UIStatusBarStyle {
+    public override var preferredStatusBarStyle: UIStatusBarStyle {
         return statusBarStyle
     }
 
-    override var preferredStatusBarUpdateAnimation: UIStatusBarAnimation {
+    public override var preferredStatusBarUpdateAnimation: UIStatusBarAnimation {
         return configuration.animationType
     }
 
@@ -92,37 +103,37 @@ final class Bartinter: UIViewController {
         }
     }
 
-    override func viewDidLoad() {
+    public override func viewDidLoad() {
         super.viewDidLoad()
         view.isHidden = true
         view.frame = .zero
     }
 
-    override func viewWillAppear(_ animated: Bool) {
+    public override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         parent?.view.layoutIfNeeded()
         parent?.view.redrawDelegate = self
         refreshStatusBarStyle()
     }
 
-    override func viewWillDisappear(_ animated: Bool) {
+    public override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         view.subviews.forEach { $0.removeFromSuperview() }
         parent?.view.redrawDelegate = nil
     }
 
-    override func viewDidLayoutSubviews() {
+    public override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         refreshStatusBarStyle()
     }
 
-    func attach(to viewController: UIViewController) {
+    public func attach(to viewController: UIViewController) {
         viewController.addChildViewController(self)
         viewController.view.addSubview(view)
         didMove(toParentViewController: viewController)
     }
 
-    func detach() {
+    public func detach() {
         willMove(toParentViewController: nil)
         view.removeFromSuperview()
         removeFromParentViewController()
@@ -130,7 +141,7 @@ final class Bartinter: UIViewController {
 }
 
 extension Bartinter: UIViewRedrawDelegate {
-    func didLayoutSubviews() {
+    public func didLayoutSubviews() {
         refreshStatusBarStyle()
     }
 }

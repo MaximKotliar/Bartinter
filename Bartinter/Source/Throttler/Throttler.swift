@@ -1,9 +1,7 @@
 //
 //  Throttler.swift
-//  Yoga
 //
 //  Created by Maxim Kotliar on 6/17/18.
-//  Copyright © 2018 Wikrgroup. All rights reserved.
 //
 
 import Foundation

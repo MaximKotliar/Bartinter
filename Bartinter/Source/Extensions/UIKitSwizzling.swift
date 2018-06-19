@@ -1,9 +1,7 @@
 //
 //  UIKitSwizzling.swift
-//  Yoga
 //
 //  Created by Maxim Kotliar on 6/19/18.
-//  Copyright © 2018 Wikrgroup. All rights reserved.
 //
 
 import UIKit.UIViewController
@@ -27,7 +25,7 @@ extension UIViewController {
     }
 }
 
-protocol UIViewRedrawDelegate: class {
+public protocol UIViewRedrawDelegate: class {
     func didLayoutSubviews()
 }
 
@@ -52,8 +50,8 @@ extension UIView {
     }
 }
 
-extension Bartinter {
-    static func swizzle() {
+public extension Bartinter {
+    public static func swizzle() {
         UIViewController.setupChildViewControllerForStatusBarStyleSwizzling()
         UIView.setupSetNeedsLayoutSwizzling()
     }

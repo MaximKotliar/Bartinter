@@ -1,15 +1,13 @@
 //
 //  UIViewController+Bartinter.swift
-//  Yoga
 //
 //  Created by Maxim Kotliar on 6/19/18.
-//  Copyright © 2018 Wikrgroup. All rights reserved.
 //
 
 import UIKit.UIViewController
 
 private var statusBarUpdaterHandle = "statusBarUpdaterHandle"
-extension UIViewController {
+public extension UIViewController {
 
     private(set) var statusBarUpdater: Bartinter? {
         get {
@@ -31,7 +29,7 @@ extension UIViewController {
     }
 
     /// Updates StatusBar Appearance Automatically
-    @IBInspectable var updatesStatusBarAppearanceAutomatically: Bool {
+    @IBInspectable public var updatesStatusBarAppearanceAutomatically: Bool {
         get {
             return statusBarUpdater != nil
         }

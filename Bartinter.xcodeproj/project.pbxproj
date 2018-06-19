@@ -9,10 +9,11 @@
 /* Begin PBXBuildFile section */
 		1967AF9120D96F480043C0E7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1967AF9020D96F480043C0E7 /* ViewController.swift */; };
 		1967AFA920D96F7C0043C0E7 /* Throttler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1967AFA120D96F7C0043C0E7 /* Throttler.swift */; };
-		1967AFAC20D96F7C0043C0E7 /* AutomaticStatusBarAppearanceUpdater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1967AFA420D96F7C0043C0E7 /* AutomaticStatusBarAppearanceUpdater.swift */; };
+		1967AFAC20D96F7C0043C0E7 /* Bartinter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1967AFA420D96F7C0043C0E7 /* Bartinter.swift */; };
 		1967AFAE20D96F7C0043C0E7 /* UIKitSwizzling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1967AFA720D96F7C0043C0E7 /* UIKitSwizzling.swift */; };
 		1967AFAF20D96F7C0043C0E7 /* UIViewController+Bartinter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1967AFA820D96F7C0043C0E7 /* UIViewController+Bartinter.swift */; };
 		1967AFB220D970180043C0E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1967AFB120D970180043C0E7 /* AppDelegate.swift */; };
+		4A5EEBAA4271EB653286F146 /* Pods_Bartinter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB93EACE0572CDC321F11588 /* Pods_Bartinter.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,10 +21,13 @@
 		1967AF9020D96F480043C0E7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1967AF9A20D96F4A0043C0E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1967AFA120D96F7C0043C0E7 /* Throttler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Throttler.swift; sourceTree = "<group>"; };
-		1967AFA420D96F7C0043C0E7 /* AutomaticStatusBarAppearanceUpdater.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutomaticStatusBarAppearanceUpdater.swift; sourceTree = "<group>"; };
+		1967AFA420D96F7C0043C0E7 /* Bartinter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bartinter.swift; sourceTree = "<group>"; };
 		1967AFA720D96F7C0043C0E7 /* UIKitSwizzling.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIKitSwizzling.swift; sourceTree = "<group>"; };
 		1967AFA820D96F7C0043C0E7 /* UIViewController+Bartinter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Bartinter.swift"; sourceTree = "<group>"; };
 		1967AFB120D970180043C0E7 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		58D96E9E3C5D3021DE90D28F /* Pods-Bartinter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bartinter.release.xcconfig"; path = "Pods/Target Support Files/Pods-Bartinter/Pods-Bartinter.release.xcconfig"; sourceTree = "<group>"; };
+		77765DE7D483E9611163180B /* Pods-Bartinter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bartinter.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Bartinter/Pods-Bartinter.debug.xcconfig"; sourceTree = "<group>"; };
+		CB93EACE0572CDC321F11588 /* Pods_Bartinter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bartinter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A5EEBAA4271EB653286F146 /* Pods_Bartinter.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,8 @@
 			children = (
 				1967AF8D20D96F480043C0E7 /* Bartinter */,
 				1967AF8C20D96F480043C0E7 /* Products */,
+				D444C9097BE81D69E282BF81 /* Pods */,
+				68BE034EC4BE6FE7E819F493 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -86,9 +93,26 @@
 			children = (
 				1967AFA020D96F7C0043C0E7 /* Throttler */,
 				1967AFA620D96F7C0043C0E7 /* Extensions */,
-				1967AFA420D96F7C0043C0E7 /* AutomaticStatusBarAppearanceUpdater.swift */,
+				1967AFA420D96F7C0043C0E7 /* Bartinter.swift */,
 			);
 			path = Source;
+			sourceTree = "<group>";
+		};
+		68BE034EC4BE6FE7E819F493 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CB93EACE0572CDC321F11588 /* Pods_Bartinter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D444C9097BE81D69E282BF81 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				77765DE7D483E9611163180B /* Pods-Bartinter.debug.xcconfig */,
+				58D96E9E3C5D3021DE90D28F /* Pods-Bartinter.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -98,6 +122,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1967AF9D20D96F4A0043C0E7 /* Build configuration list for PBXNativeTarget "Bartinter" */;
 			buildPhases = (
+				6931EEB89C8B453495BA7365 /* [CP] Check Pods Manifest.lock */,
 				1967AF8720D96F480043C0E7 /* Sources */,
 				1967AF8820D96F480043C0E7 /* Frameworks */,
 				1967AF8920D96F480043C0E7 /* Resources */,
@@ -154,6 +179,27 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		6931EEB89C8B453495BA7365 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Bartinter-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1967AF8720D96F480043C0E7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -164,7 +210,7 @@
 				1967AFAF20D96F7C0043C0E7 /* UIViewController+Bartinter.swift in Sources */,
 				1967AFA920D96F7C0043C0E7 /* Throttler.swift in Sources */,
 				1967AFAE20D96F7C0043C0E7 /* UIKitSwizzling.swift in Sources */,
-				1967AFAC20D96F7C0043C0E7 /* AutomaticStatusBarAppearanceUpdater.swift in Sources */,
+				1967AFAC20D96F7C0043C0E7 /* Bartinter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +333,7 @@
 		};
 		1967AF9E20D96F4A0043C0E7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 77765DE7D483E9611163180B /* Pods-Bartinter.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -304,6 +351,7 @@
 		};
 		1967AF9F20D96F4A0043C0E7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 58D96E9E3C5D3021DE90D28F /* Pods-Bartinter.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
