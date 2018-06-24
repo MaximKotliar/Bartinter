@@ -31,7 +31,7 @@ Bartinter.isSwizzlingEnabled = false
 ```
 Without swizzling you need to do some things manually: 
 
-Firstly, you need to provide `childViewControllerForStatusBarStyle`, in your ViewController subclas just add following: 
+Firstly, you need to provide `childViewControllerForStatusBarStyle`, in your ViewController subclass just add following: 
 ```swift
 override var childViewControllerForStatusBarStyle: UIViewController? {
     return statusBarUpdater
