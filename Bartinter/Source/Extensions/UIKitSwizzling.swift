@@ -51,8 +51,13 @@ extension UIView {
 }
 
 public extension Bartinter {
-    public static func swizzle() {
+    public static var isSwizzlingEnabled: Bool = true
+
+    static var isSwizzlingPerformed: Bool = false
+    public static func swizzleIfNeeded() {
+        guard isSwizzlingEnabled && !isSwizzlingPerformed else { return }
         UIViewController.setupChildViewControllerForStatusBarStyleSwizzling()
         UIView.setupSetNeedsLayoutSwizzling()
+        isSwizzlingPerformed = true
     }
 }

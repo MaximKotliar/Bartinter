@@ -37,7 +37,6 @@ public extension Bartinter {
 }
 
 public final class Bartinter: UIViewController {
-
     public var configuration: Configuration {
         didSet {
             throttler.maxInterval = configuration.throttleDelay
@@ -50,6 +49,7 @@ public final class Bartinter: UIViewController {
 
     public init(_ configuration: Configuration = Configuration()) {
         self.configuration = configuration
+        Bartinter.swizzleIfNeeded()
         super.init(nibName: nil, bundle: nil)
     }
 
