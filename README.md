@@ -5,6 +5,9 @@
 # Bartinter
 Status bar apperance manager, that make's your status bar readable by dynamically changing it's color depending on content behind.
 
+![alt tag](https://raw.githubusercontent.com/MaximKotliar/Bartinter/master/demo.gif)
+
+
 ## Installation
 Add
 
