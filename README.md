@@ -3,7 +3,7 @@
 [![Platform](https://img.shields.io/cocoapods/p/Bartinter.svg?style=flat-square)](http://cocoapods.org/pods/Bartinter)
 
 # Bartinter
-Status bar apperance manager, that make's your status bar readable by dynamically changing it's color depending on content behind.
+Status bar apperance manager that make your status bar readable by dynamically changing it's color depending on content behind.
 
 ![alt tag](https://raw.githubusercontent.com/MaximKotliar/Bartinter/master/demo.gif)
 
