@@ -91,7 +91,7 @@ public final class Bartinter: UIViewController {
         return configuration.animationType
     }
 
-    @objc func refreshStatusBarStyle() {
+    @objc public func refreshStatusBarStyle() {
         calculateStatusBarAreaAvgLuminance { [weak self] avgLuminance in
             guard let strongSelf = self else { return }
             let antiFlick = strongSelf.configuration.antiFlickRange / 2
