@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "Bartinter"
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
   s.summary      = "Automatically manages Status Bar color depending on context behind it"
   s.swift_version = "4.1"
 
