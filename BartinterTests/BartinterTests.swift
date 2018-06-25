@@ -11,59 +11,6 @@ import XCTest
 
 class BartinterTests: XCTestCase {
 
-    func testSwizzling() {
-        func noSwizzlingTest() {
-            Bartinter.isSwizzlingEnabled = false
-
-            let selectorA = #selector(getter: UIViewController.childViewControllerForStatusBarStyle)
-            let swizzledSelectorA = #selector(getter: UIViewController.swizzledChildViewControllerForStatusBarStyle)
-            let selectorB = #selector(UIView.layoutSubviews)
-            let swizzledSelectorB = #selector(UIView.swizzledLayoutSubviews)
-
-            let swizzledImplementationA = class_getMethodImplementation(UIViewController.self,
-                                                                        swizzledSelectorA)!
-            let swizzledImplementationB = class_getMethodImplementation(UIView.self,
-                                                                        swizzledSelectorB)!
-
-            // Perform swizzling
-            let controller = UIViewController()
-            controller.updatesStatusBarAppearanceAutomatically = true
-            let currentImplementationA = class_getMethodImplementation(UIViewController.self,
-                                                                       selectorA)!
-            let currentImplementationB = class_getMethodImplementation(UIView.self,
-                                                                       selectorB)!
-            XCTAssert(currentImplementationA != swizzledImplementationA)
-            XCTAssert(currentImplementationB != swizzledImplementationB)
-        }
-
-        func swizzlingTest() {
-            Bartinter.isSwizzlingEnabled = true
-
-            let selectorA = #selector(getter: UIViewController.childViewControllerForStatusBarStyle)
-            let swizzledSelectorA = #selector(getter: UIViewController.swizzledChildViewControllerForStatusBarStyle)
-            let selectorB = #selector(UIView.layoutSubviews)
-            let swizzledSelectorB = #selector(UIView.swizzledLayoutSubviews)
-
-            let swizzledImplementationA = class_getMethodImplementation(UIViewController.self,
-                                                                        swizzledSelectorA)!
-            let swizzledImplementationB = class_getMethodImplementation(UIView.self,
-                                                                        swizzledSelectorB)!
-
-            // Perform swizzling
-            let controller = UIViewController()
-            controller.updatesStatusBarAppearanceAutomatically = true
-            let currentImplementationA = class_getMethodImplementation(UIViewController.self,
-                                                                       selectorA)!
-            let currentImplementationB = class_getMethodImplementation(UIView.self,
-                                                                       selectorB)!
-            XCTAssert(currentImplementationA == swizzledImplementationA)
-            XCTAssert(currentImplementationB == swizzledImplementationB)
-        }
-
-        noSwizzlingTest()
-        swizzlingTest()
-    }
-
     weak var bartinter: UIViewController?
     func testDeallocation() {
         Bartinter.isSwizzlingEnabled = false

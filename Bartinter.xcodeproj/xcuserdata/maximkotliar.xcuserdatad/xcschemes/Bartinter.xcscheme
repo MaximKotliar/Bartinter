@@ -38,6 +38,16 @@
                ReferencedContainer = "container:Bartinter.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "19F320E420E16392008D1587"
+               BuildableName = "BartinterUITests.xctest"
+               BlueprintName = "BartinterUITests"
+               ReferencedContainer = "container:Bartinter.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference

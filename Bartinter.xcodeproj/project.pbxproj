@@ -15,11 +15,19 @@
 		1967AFAF20D96F7C0043C0E7 /* UIViewController+Bartinter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1967AFA820D96F7C0043C0E7 /* UIViewController+Bartinter.swift */; };
 		1967AFB220D970180043C0E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1967AFB120D970180043C0E7 /* AppDelegate.swift */; };
 		19F320E020E14F56008D1587 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19F320DF20E14F56008D1587 /* Main.storyboard */; };
+		19F320E820E16392008D1587 /* BartinterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F320E720E16392008D1587 /* BartinterUITests.swift */; };
 		4A5EEBAA4271EB653286F146 /* Pods_Bartinter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB93EACE0572CDC321F11588 /* Pods_Bartinter.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		195444AE20E14E66004B03C5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1967AF8320D96F480043C0E7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1967AF8A20D96F480043C0E7;
+			remoteInfo = Bartinter;
+		};
+		19F320EA20E16392008D1587 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 1967AF8320D96F480043C0E7 /* Project object */;
 			proxyType = 1;
@@ -41,6 +49,9 @@
 		1967AFA820D96F7C0043C0E7 /* UIViewController+Bartinter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Bartinter.swift"; sourceTree = "<group>"; };
 		1967AFB120D970180043C0E7 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		19F320DF20E14F56008D1587 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		19F320E520E16392008D1587 /* BartinterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BartinterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		19F320E720E16392008D1587 /* BartinterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BartinterUITests.swift; sourceTree = "<group>"; };
+		19F320E920E16392008D1587 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		58D96E9E3C5D3021DE90D28F /* Pods-Bartinter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bartinter.release.xcconfig"; path = "Pods/Target Support Files/Pods-Bartinter/Pods-Bartinter.release.xcconfig"; sourceTree = "<group>"; };
 		77765DE7D483E9611163180B /* Pods-Bartinter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bartinter.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Bartinter/Pods-Bartinter.debug.xcconfig"; sourceTree = "<group>"; };
 		CB93EACE0572CDC321F11588 /* Pods_Bartinter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bartinter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -62,6 +73,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		19F320E220E16392008D1587 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -79,6 +97,7 @@
 			children = (
 				1967AF8D20D96F480043C0E7 /* Bartinter */,
 				195444AA20E14E66004B03C5 /* BartinterTests */,
+				19F320E620E16392008D1587 /* BartinterUITests */,
 				1967AF8C20D96F480043C0E7 /* Products */,
 				D444C9097BE81D69E282BF81 /* Pods */,
 				68BE034EC4BE6FE7E819F493 /* Frameworks */,
@@ -90,6 +109,7 @@
 			children = (
 				1967AF8B20D96F480043C0E7 /* Bartinter.app */,
 				195444A920E14E66004B03C5 /* BartinterTests.xctest */,
+				19F320E520E16392008D1587 /* BartinterUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -131,6 +151,15 @@
 				1967AFA420D96F7C0043C0E7 /* Bartinter.swift */,
 			);
 			path = Source;
+			sourceTree = "<group>";
+		};
+		19F320E620E16392008D1587 /* BartinterUITests */ = {
+			isa = PBXGroup;
+			children = (
+				19F320E720E16392008D1587 /* BartinterUITests.swift */,
+				19F320E920E16392008D1587 /* Info.plist */,
+			);
+			path = BartinterUITests;
 			sourceTree = "<group>";
 		};
 		68BE034EC4BE6FE7E819F493 /* Frameworks */ = {
@@ -189,6 +218,24 @@
 			productReference = 1967AF8B20D96F480043C0E7 /* Bartinter.app */;
 			productType = "com.apple.product-type.application";
 		};
+		19F320E420E16392008D1587 /* BartinterUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 19F320EC20E16392008D1587 /* Build configuration list for PBXNativeTarget "BartinterUITests" */;
+			buildPhases = (
+				19F320E120E16392008D1587 /* Sources */,
+				19F320E220E16392008D1587 /* Frameworks */,
+				19F320E320E16392008D1587 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				19F320EB20E16392008D1587 /* PBXTargetDependency */,
+			);
+			name = BartinterUITests;
+			productName = BartinterUITests;
+			productReference = 19F320E520E16392008D1587 /* BartinterUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -205,6 +252,10 @@
 					};
 					1967AF8A20D96F480043C0E7 = {
 						CreatedOnToolsVersion = 9.4;
+					};
+					19F320E420E16392008D1587 = {
+						CreatedOnToolsVersion = 9.4;
+						TestTargetID = 1967AF8A20D96F480043C0E7;
 					};
 				};
 			};
@@ -223,6 +274,7 @@
 			targets = (
 				1967AF8A20D96F480043C0E7 /* Bartinter */,
 				195444A820E14E66004B03C5 /* BartinterTests */,
+				19F320E420E16392008D1587 /* BartinterUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -240,6 +292,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				19F320E020E14F56008D1587 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19F320E320E16392008D1587 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,6 +347,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		19F320E120E16392008D1587 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19F320E820E16392008D1587 /* BartinterUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -295,6 +362,11 @@
 			isa = PBXTargetDependency;
 			target = 1967AF8A20D96F480043C0E7 /* Bartinter */;
 			targetProxy = 195444AE20E14E66004B03C5 /* PBXContainerItemProxy */;
+		};
+		19F320EB20E16392008D1587 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1967AF8A20D96F480043C0E7 /* Bartinter */;
+			targetProxy = 19F320EA20E16392008D1587 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -491,6 +563,42 @@
 			};
 			name = Release;
 		};
+		19F320ED20E16392008D1587 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BartinterUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.maximkotliar.BartinterUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Bartinter;
+			};
+			name = Debug;
+		};
+		19F320EE20E16392008D1587 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BartinterUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.maximkotliar.BartinterUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Bartinter;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -517,6 +625,15 @@
 			buildConfigurations = (
 				1967AF9E20D96F4A0043C0E7 /* Debug */,
 				1967AF9F20D96F4A0043C0E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		19F320EC20E16392008D1587 /* Build configuration list for PBXNativeTarget "BartinterUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19F320ED20E16392008D1587 /* Debug */,
+				19F320EE20E16392008D1587 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
