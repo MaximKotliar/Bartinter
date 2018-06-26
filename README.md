@@ -1,4 +1,4 @@
-![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)
+[![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/vsouza/awesome-ios)
 [![Version](https://img.shields.io/cocoapods/v/Bartinter.svg?style=flat-square)](http://cocoapods.org/pods/Bartinter)
 [![License](https://img.shields.io/cocoapods/l/Bartinter.svg?style=flat-square)](http://cocoapods.org/pods/Bartinter)
 [![Platform](https://img.shields.io/cocoapods/p/Bartinter.svg?style=flat-square)](http://cocoapods.org/pods/Bartinter)
