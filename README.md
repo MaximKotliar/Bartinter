@@ -39,7 +39,7 @@ override var childViewControllerForStatusBarStyle: UIViewController? {
 }
 ```
 
-Secondly, you need de decide, when you need to refresh status bar style, for example on tableView scroll, so add: 
+Secondly, you need to decide, when you need to refresh status bar style, for example on tableView scroll, so add: 
 ```swift
 func scrollViewDidScroll(_ scrollView: UIScrollView) {
     statusBarUpdater?.refreshStatusBarStyle()
