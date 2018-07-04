@@ -24,7 +24,7 @@ public extension UIViewController {
             objc_setAssociatedObject(self,
                                      &statusBarUpdaterHandle,
                                      newValue,
-                                     .OBJC_ASSOCIATION_RETAIN)
+                                     .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
         }
     }
 
