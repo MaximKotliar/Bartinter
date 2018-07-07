@@ -13,8 +13,8 @@ public extension Bartinter {
         public static var defaultAnimationDuration: TimeInterval = 0.2
         public static var defaultThrottleDelay: TimeInterval = 0.2
         public static var defaultAnimationType: UIStatusBarAnimation = .fade
-        public static var defaultMidPoint: CGFloat = 0.5
-        public static var defaultAntiFlickRange: CGFloat = 0.1
+        public static var defaultMidPoint: CGFloat = 0.6
+        public static var defaultAntiFlickRange: CGFloat = 0.08
 
         var animationDuration = defaultAnimationDuration
         var animationType = defaultAnimationType
