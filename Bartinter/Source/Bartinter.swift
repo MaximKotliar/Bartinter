@@ -61,10 +61,11 @@ public final class Bartinter: UIViewController {
         guard let layer = parent?.view.layer else { return }
         let scale: CGFloat = 0.5
         let size = UIApplication.shared.statusBarFrame.size
-        throttler.throttle {
+        throttler.throttle { [weak self] in
+            guard let strongLayer = self?.parent?.view.layer else { return }
             UIGraphicsBeginImageContextWithOptions(size, false, scale)
             guard let context = UIGraphicsGetCurrentContext() else { return }
-            layer.render(in: context)
+            strongLayer.render(in: context)
             let image = UIGraphicsGetImageFromCurrentImageContext()
             guard let averageLuminance = image?.averageLuminance else { return }
             UIGraphicsEndImageContext()
