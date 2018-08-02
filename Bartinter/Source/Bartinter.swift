@@ -58,7 +58,6 @@ public final class Bartinter: UIViewController {
     }
 
     private func calculateStatusBarAreaAvgLuminance(_ completion: @escaping (CGFloat) -> Void) {
-        guard let layer = parent?.view.layer else { return }
         let scale: CGFloat = 0.5
         let size = UIApplication.shared.statusBarFrame.size
         throttler.throttle { [weak self] in
