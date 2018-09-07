@@ -37,7 +37,7 @@ class BartinterUITests: XCTestCase {
         changeColorButton.tap()
         XCTAssert(isDark)
         changeColorButton.tap()
-        XCTAssert(isDark)
+        XCTAssert(isLight)
         changeColorButton.tap()
         XCTAssert(isLight)
         changeColorButton.tap()
