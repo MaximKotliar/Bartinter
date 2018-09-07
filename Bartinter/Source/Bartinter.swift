@@ -57,19 +57,27 @@ public final class Bartinter: UIViewController {
         fatalError("init(coder:) has not been implemented")
     }
 
+    private func getLayer(completion: @escaping (CALayer) -> Void) {
+        DispatchQueue.main.async { [weak self] in
+            guard let layer = self?.parent?.view.layer else { return }
+            completion(layer)
+        }
+    }
+
     private func calculateStatusBarAreaAvgLuminance(_ completion: @escaping (CGFloat) -> Void) {
         let scale: CGFloat = 0.5
         let size = UIApplication.shared.statusBarFrame.size
-        throttler.throttle { [weak self] in
-            guard let strongLayer = self?.parent?.view.layer else { return }
-            UIGraphicsBeginImageContextWithOptions(size, false, scale)
-            guard let context = UIGraphicsGetCurrentContext() else { return }
-            strongLayer.render(in: context)
-            let image = UIGraphicsGetImageFromCurrentImageContext()
-            guard let averageLuminance = image?.averageLuminance else { return }
-            UIGraphicsEndImageContext()
-            DispatchQueue.main.async {
-                completion(averageLuminance)
+        getLayer { [weak self] layer in
+            self?.throttler.throttle {
+                UIGraphicsBeginImageContextWithOptions(size, false, scale)
+                guard let context = UIGraphicsGetCurrentContext() else { return }
+                layer.render(in: context)
+                let image = UIGraphicsGetImageFromCurrentImageContext()
+                guard let averageLuminance = image?.averageLuminance else { return }
+                UIGraphicsEndImageContext()
+                DispatchQueue.main.async {
+                    completion(averageLuminance)
+                }
             }
         }
     }
