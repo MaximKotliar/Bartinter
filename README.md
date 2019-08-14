@@ -12,10 +12,14 @@ Status bar apperance manager that make your status bar readable by dynamically c
 ## Installation
 Add
 
-`pod 'Bartinter'`
-
+```ruby
+pod 'Bartinter'
+```
 to your podfile, and run
-`pod install`
+
+```
+pod install
+```
 
 ## Usage
 
