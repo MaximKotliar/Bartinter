@@ -9,7 +9,7 @@ import CoreImage
 
 public extension Bartinter {
 
-    public struct Configuration {
+    struct Configuration {
         public static var defaultAnimationDuration: TimeInterval = 0.2
         public static var defaultThrottleDelay: TimeInterval = 0.2
         public static var defaultAnimationType: UIStatusBarAnimation = .fade
@@ -136,15 +136,15 @@ public final class Bartinter: UIViewController {
     }
 
     public func attach(to viewController: UIViewController) {
-        viewController.addChildViewController(self)
+        viewController.addChild(self)
         viewController.view.addSubview(view)
-        didMove(toParentViewController: viewController)
+        didMove(toParent: viewController)
     }
 
     public func detach() {
-        willMove(toParentViewController: nil)
+        willMove(toParent: nil)
         view.removeFromSuperview()
-        removeFromParentViewController()
+        removeFromParent()
     }
 }
 
@@ -163,18 +163,18 @@ private extension UIImage {
                                     w: inputImage.extent.size.height)
 
         guard let filter = CIFilter(name: "CIAreaAverage",
-                                    withInputParameters: [kCIInputImageKey: inputImage,
+                                    parameters: [kCIInputImageKey: inputImage,
                                                           kCIInputExtentKey: extentVector]) else { return nil }
         guard let outputImage = filter.outputImage else { return nil }
 
         var bitmap = [UInt8](repeating: 0, count: 4)
-        let context = CIContext(options: [kCIContextWorkingColorSpace: kCFNull])
+        let context = CIContext(options: [CIContextOption.workingColorSpace: kCFNull!])
         context.render(outputImage,
                        toBitmap: &bitmap,
                        rowBytes: 4,
                        bounds: CGRect(x: 0, y: 0,
                                       width: 1, height: 1),
-                       format: kCIFormatRGBA8,
+                       format: CIFormat.RGBA8,
                        colorSpace: nil)
 
         let r = CGFloat(bitmap[0]) / 255
