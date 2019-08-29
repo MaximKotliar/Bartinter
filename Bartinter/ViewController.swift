@@ -21,13 +21,15 @@ class ViewController: UIViewController {
     }
 
     private func updateLabel() {
-        switch childViewControllerForStatusBarStyle!.preferredStatusBarStyle {
+        switch childForStatusBarStyle!.preferredStatusBarStyle {
         case .default:
             label.text = "dark"
         case .lightContent:
             label.text = "light"
         case .blackOpaque:
             label.text = "dark"
+        @unknown default:
+            label.text = "unknown color"
         }
     }
 
@@ -37,7 +39,7 @@ class ViewController: UIViewController {
         if currentColor == colors.last {
             color = colors.first
         } else {
-            guard let colorIndex = colors.index(of: currentColor) else { return }
+            guard let colorIndex = colors.firstIndex(of: currentColor) else { return }
             color = colors[colorIndex + 1]
         }
         view.backgroundColor = color

@@ -13,7 +13,7 @@ extension UIViewController {
     }
 
     fileprivate static func setupChildViewControllerForStatusBarStyleSwizzling() {
-        let original = #selector(getter: UIViewController.childViewControllerForStatusBarStyle)
+        let original = #selector(getter: UIViewController.childForStatusBarStyle)
         let swizzled = #selector(getter: UIViewController.swizzledChildViewControllerForStatusBarStyle)
 
         let originalMethod = class_getInstanceMethod(UIViewController.self,
@@ -51,10 +51,10 @@ extension UIView {
 }
 
 public extension Bartinter {
-    public static var isSwizzlingEnabled: Bool = true
+    static var isSwizzlingEnabled: Bool = true
 
     static var isSwizzlingPerformed: Bool = false
-    public static func swizzleIfNeeded() {
+    static func swizzleIfNeeded() {
         guard isSwizzlingEnabled && !isSwizzlingPerformed else { return }
         UIViewController.setupChildViewControllerForStatusBarStyleSwizzling()
         UIView.setupSetNeedsLayoutSwizzling()

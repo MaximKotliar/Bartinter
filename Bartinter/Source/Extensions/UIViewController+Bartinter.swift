@@ -29,7 +29,7 @@ public extension UIViewController {
     }
 
     /// Updates StatusBar Appearance Automatically
-    @IBInspectable public var updatesStatusBarAppearanceAutomatically: Bool {
+    @IBInspectable var updatesStatusBarAppearanceAutomatically: Bool {
         get {
             return statusBarUpdater != nil
         }

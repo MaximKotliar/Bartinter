@@ -16,9 +16,9 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "Bartinter"
-  s.version      = "0.0.4"
+  s.version      = "0.0.5"
   s.summary      = "Automatically manages Status Bar color depending on context behind it"
-  s.swift_version = "4.1"
+  s.swift_version = "5.0"
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
