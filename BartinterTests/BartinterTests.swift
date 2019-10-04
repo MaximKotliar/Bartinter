@@ -6,7 +6,7 @@
 //  Copyright © 2018 Maxim Kotliar. All rights reserved.
 //
 
-@testable import Bartinter
+import Bartinter
 import XCTest
 
 class BartinterTests: XCTestCase {

@@ -1,0 +1,6 @@
+framework module Pods_BartinterUITests {
+  umbrella header "Pods-BartinterUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

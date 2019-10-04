@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Bartinter
 
 class ViewController: UIViewController {
 
