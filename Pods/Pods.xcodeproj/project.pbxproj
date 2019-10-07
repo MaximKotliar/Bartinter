@@ -3,175 +3,612 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		22626A4534284D5BA83493F0AA90EF57 /* Pods-Bartinter-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FC338DBD5EDD16AADC22BF68E402BFB7 /* Pods-Bartinter-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		48CF8CDB46087795EE20EE5E228F303D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
-		8A9B67F667BB280311A35555802D918D /* Pods-Bartinter-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D064CF57FB4D5BC1A4E9E6832CE90B1A /* Pods-Bartinter-dummy.m */; };
+		1507EADCC0D826770C122D4916822385 /* Bartinter-iOS9.0-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9CBBD24CBEA50B6B36E4E312212668EB /* Bartinter-iOS9.0-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1A906A195E8B52E59DD9E2DE8257B99E /* Bartinter-iOS11.4-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B8F6E4C24CE5AD4F4DAE6EFC1E1965 /* Bartinter-iOS11.4-dummy.m */; };
+		22DE104034D63FCAA302EEB79E4F66C5 /* UIViewController+Bartinter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6079CFF1CF58FE9B04CEC924409E6A /* UIViewController+Bartinter.swift */; };
+		2EAD2EFA356FCD926D5F95DB3BBA4445 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		41AA3DE04D6E030907661F3E9CC528CC /* UIKitSwizzling.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4032620D7361C6B2FB853AE43B7E557 /* UIKitSwizzling.swift */; };
+		4C1D4EE1C9D493B8E1D04F322257E606 /* Pods-Bartinter-Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 20E4EE28955E43925E7EB659226F0DC5 /* Pods-Bartinter-Example-dummy.m */; };
+		68048C34B0D3DA8A7D5EAC139FF3704E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		709D35BD913960B3DCBA765E54FD768B /* Bartinter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2E1BD798779B12D2A3840D993E9DDB /* Bartinter.swift */; };
+		81E4FC87DEDBA4F8CF55957AF15DF355 /* Bartinter-iOS9.0-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 30BBDBC87B99915AEF783217F3D69B8B /* Bartinter-iOS9.0-dummy.m */; };
+		8AA6699D0D15653DF192D5E83FE2D7A6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		8FC5C53C39347266BDF2CBFABA26B3D7 /* Bartinter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2E1BD798779B12D2A3840D993E9DDB /* Bartinter.swift */; };
+		910638ABFCDE6C319D272E8B5A088AC1 /* UIKitSwizzling.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4032620D7361C6B2FB853AE43B7E557 /* UIKitSwizzling.swift */; };
+		ABDC381AC32E76CF5A9E3F867E32BD75 /* Bartinter-iOS11.4-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B8E710C02B94C6002A7A6E1C69CB7DE7 /* Bartinter-iOS11.4-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B569BC2AB232D435D1334B9DD53C89A6 /* Pods-BartinterTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D3F9F6F347F92CE92D229DC36CE4D48F /* Pods-BartinterTests-dummy.m */; };
+		B636316AE1B2FE5B1924669EE026A1BC /* Pods-BartinterUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E672CFDE2034B4BF3B502E39D3F098 /* Pods-BartinterUITests-dummy.m */; };
+		B849FD052648E9512E1AD22A4378BB05 /* Throttler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754E62493F66D06F66D30BF7D5A3B8B5 /* Throttler.swift */; };
+		B86A7A066F0F1B08576E89E14C13820E /* Pods-BartinterUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A81903A4D974989E2840B3B4CD7F7239 /* Pods-BartinterUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BC379FC96C5BFD2EA3B6B1F440081429 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		C0AC63ABBF06A61F3E5AAC5C191849E1 /* UIViewController+Bartinter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6079CFF1CF58FE9B04CEC924409E6A /* UIViewController+Bartinter.swift */; };
+		C29C424524E3A9BCDC430EE63345AC81 /* Pods-BartinterTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8166EB0D4A231A127FAD5023464425C0 /* Pods-BartinterTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DA258790435190A80D3687A37011E5A8 /* Pods-Bartinter-Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 10DBB2132721BBE6FA0D1F478E06F16D /* Pods-Bartinter-Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E90CBDBBF670ED9C3E914FBB0A1D774F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		F4B01882CEC687A8DE026D9BDE0F64E2 /* Throttler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754E62493F66D06F66D30BF7D5A3B8B5 /* Throttler.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		0DC419673B9AE90F2A8B756F49A26B53 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8BD3D137AA810270B0DD0D545778F4A0;
+			remoteInfo = "Bartinter-iOS11.4";
+		};
+		69DFE6435B70803A8BCAFFE20758A12C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D9B117975A84627ABF1A89CE11A393BC;
+			remoteInfo = "Bartinter-iOS9.0";
+		};
+		6D02B3874F93F28C405F7BF269579024 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8BD3D137AA810270B0DD0D545778F4A0;
+			remoteInfo = "Bartinter-iOS11.4";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
-		02FC6C99C062FBD6EEBC4478F2F6D57E /* Pods-Bartinter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Bartinter.debug.xcconfig"; sourceTree = "<group>"; };
-		0A25E4774BDA7BF26B107954C2FB621D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		55A82EA4572182B941D09F99AD9DAB83 /* Pods-Bartinter-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Bartinter-acknowledgements.markdown"; sourceTree = "<group>"; };
-		58987026ED3D386C217A0511269BAB85 /* Pods-Bartinter.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Bartinter.modulemap"; sourceTree = "<group>"; };
-		5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		982E8342EC1CE5A5F8DFCC44CF18ED3A /* Pods-Bartinter-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Bartinter-resources.sh"; sourceTree = "<group>"; };
-		9A06072AA7DB9DB5A5882998C98B86B3 /* Pods-Bartinter-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Bartinter-frameworks.sh"; sourceTree = "<group>"; };
-		A80DF62F665BB2268715EFF850BF22F9 /* Pods-Bartinter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Bartinter.release.xcconfig"; sourceTree = "<group>"; };
-		ACBFADF172DCB700D8AFC99D3B2FE2B8 /* Pods_Bartinter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Bartinter.framework; path = "Pods-Bartinter.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B5A78A19E4F60FE2D0126981B451A3EA /* Pods-Bartinter-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Bartinter-acknowledgements.plist"; sourceTree = "<group>"; };
-		D064CF57FB4D5BC1A4E9E6832CE90B1A /* Pods-Bartinter-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Bartinter-dummy.m"; sourceTree = "<group>"; };
-		FC338DBD5EDD16AADC22BF68E402BFB7 /* Pods-Bartinter-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Bartinter-umbrella.h"; sourceTree = "<group>"; };
+		0E5A12DC63659B3FBC7FD425187869EC /* Pods-BartinterUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BartinterUITests-frameworks.sh"; sourceTree = "<group>"; };
+		10DBB2132721BBE6FA0D1F478E06F16D /* Pods-Bartinter-Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Bartinter-Example-umbrella.h"; sourceTree = "<group>"; };
+		1F80FE3B63B127DEC2A9CA2D811017E0 /* Pods-Bartinter-Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Bartinter-Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		209D843195D61663383C60B6370B29A4 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		20E4EE28955E43925E7EB659226F0DC5 /* Pods-Bartinter-Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Bartinter-Example-dummy.m"; sourceTree = "<group>"; };
+		28E672CFDE2034B4BF3B502E39D3F098 /* Pods-BartinterUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BartinterUITests-dummy.m"; sourceTree = "<group>"; };
+		2D70391EB4929AC8003F8AC41C50751E /* Bartinter-iOS9.0.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; name = "Bartinter-iOS9.0.modulemap"; path = "../Bartinter-iOS9.0/Bartinter-iOS9.0.modulemap"; sourceTree = "<group>"; };
+		2F7809B66EE515777500C9570346534F /* Bartinter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Bartinter.framework; path = "Bartinter-iOS11.4.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		30BBDBC87B99915AEF783217F3D69B8B /* Bartinter-iOS9.0-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "Bartinter-iOS9.0-dummy.m"; path = "../Bartinter-iOS9.0/Bartinter-iOS9.0-dummy.m"; sourceTree = "<group>"; };
+		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		36F5BD540A6B6DC7B4D85E2DB32E13DF /* Bartinter-iOS9.0-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Bartinter-iOS9.0-Info.plist"; path = "../Bartinter-iOS9.0/Bartinter-iOS9.0-Info.plist"; sourceTree = "<group>"; };
+		384965B1553A23AE6988A0E55B0562E2 /* Pods-BartinterTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BartinterTests-Info.plist"; sourceTree = "<group>"; };
+		48E2D234E7F774D28E558510F97C8086 /* Pods-BartinterUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BartinterUITests-Info.plist"; sourceTree = "<group>"; };
+		4B8E891463830EB212A2FB74C6DD5EDD /* Pods-Bartinter-Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Bartinter-Example.release.xcconfig"; sourceTree = "<group>"; };
+		4E2E1BD798779B12D2A3840D993E9DDB /* Bartinter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Bartinter.swift; path = Sources/Bartinter/Bartinter.swift; sourceTree = "<group>"; };
+		4EADB6BFB9A0BAC99C3076A4101DBA18 /* Pods-BartinterTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BartinterTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		593BC16527FC79EBA3025EDE55890432 /* Bartinter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Bartinter.framework; path = "Bartinter-iOS9.0.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		609DA4D5F6FABCBBBAAEFCBB10D505C1 /* Bartinter-iOS9.0-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Bartinter-iOS9.0-prefix.pch"; path = "../Bartinter-iOS9.0/Bartinter-iOS9.0-prefix.pch"; sourceTree = "<group>"; };
+		66624BA74A0CB55DDCDDF367E86B7C5E /* Pods_BartinterTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_BartinterTests.framework; path = "Pods-BartinterTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		698BEAF55B1208ECD21DD6F3BF781637 /* Pods-Bartinter-Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Bartinter-Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		6AF81892FE9AF13F10B217CB6BAF3510 /* Pods-BartinterTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BartinterTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		729C87A5999E5005AD687E221E757C6F /* Bartinter-iOS11.4-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Bartinter-iOS11.4-prefix.pch"; sourceTree = "<group>"; };
+		735BB2D3914B8497DACE6B552A5AC35F /* Pods-Bartinter-Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Bartinter-Example.modulemap"; sourceTree = "<group>"; };
+		754E62493F66D06F66D30BF7D5A3B8B5 /* Throttler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Throttler.swift; sourceTree = "<group>"; };
+		7C4365E1303843A5A86F0EACA408C23F /* Pods-BartinterUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BartinterUITests.release.xcconfig"; sourceTree = "<group>"; };
+		7F6079CFF1CF58FE9B04CEC924409E6A /* UIViewController+Bartinter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIViewController+Bartinter.swift"; sourceTree = "<group>"; };
+		80E637D7489EA79045B9AC8BC1BE28BB /* Pods-Bartinter-Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Bartinter-Example.debug.xcconfig"; sourceTree = "<group>"; };
+		8166EB0D4A231A127FAD5023464425C0 /* Pods-BartinterTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BartinterTests-umbrella.h"; sourceTree = "<group>"; };
+		88C146756F0317B07CDE7CD974D4CE84 /* Bartinter-iOS11.4-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Bartinter-iOS11.4-Info.plist"; sourceTree = "<group>"; };
+		91270B0DCB0C509A2161CC8D1D54EA4B /* Pods-Bartinter-Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Bartinter-Example-Info.plist"; sourceTree = "<group>"; };
+		9CBBD24CBEA50B6B36E4E312212668EB /* Bartinter-iOS9.0-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Bartinter-iOS9.0-umbrella.h"; path = "../Bartinter-iOS9.0/Bartinter-iOS9.0-umbrella.h"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9DE52794B81363C384EA8E12973630C1 /* Bartinter-iOS11.4.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Bartinter-iOS11.4.modulemap"; sourceTree = "<group>"; };
+		9FEE1E8980F3AED68F6834A2D69E046C /* Pods-Bartinter-Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Bartinter-Example-frameworks.sh"; sourceTree = "<group>"; };
+		A32FDE342B98B53B72DBC4A8D44A97AD /* Pods-BartinterTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BartinterTests.release.xcconfig"; sourceTree = "<group>"; };
+		A81903A4D974989E2840B3B4CD7F7239 /* Pods-BartinterUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BartinterUITests-umbrella.h"; sourceTree = "<group>"; };
+		AE9C65E81D82E826C164B50B9168A81B /* Pods-BartinterTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BartinterTests-frameworks.sh"; sourceTree = "<group>"; };
+		B5BFC3E7572A27BF7EDC7041A3489ABB /* Pods_BartinterUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_BartinterUITests.framework; path = "Pods-BartinterUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8E710C02B94C6002A7A6E1C69CB7DE7 /* Bartinter-iOS11.4-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Bartinter-iOS11.4-umbrella.h"; sourceTree = "<group>"; };
+		BB7606D37F0B8590EB28E3842F769DCA /* Pods_Bartinter_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Bartinter_Example.framework; path = "Pods-Bartinter-Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFAC57EADE96EFCDDF6CCA6049C805ED /* Bartinter-iOS11.4.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Bartinter-iOS11.4.xcconfig"; sourceTree = "<group>"; };
+		C2F73A46096AD700C34ECC8AE238D11E /* Bartinter-iOS9.0.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Bartinter-iOS9.0.xcconfig"; path = "../Bartinter-iOS9.0/Bartinter-iOS9.0.xcconfig"; sourceTree = "<group>"; };
+		C4032620D7361C6B2FB853AE43B7E557 /* UIKitSwizzling.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UIKitSwizzling.swift; sourceTree = "<group>"; };
+		CAA870E192AF7FF918D4F4C584CED988 /* Bartinter.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = Bartinter.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		D07B0A1020F3C4A129ECF809CFB15F25 /* Pods-BartinterUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BartinterUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		D3F9F6F347F92CE92D229DC36CE4D48F /* Pods-BartinterTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BartinterTests-dummy.m"; sourceTree = "<group>"; };
+		D57DB5DB11DB276A570F09D0BFDB9BE1 /* Pods-BartinterUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BartinterUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		E9B8F6E4C24CE5AD4F4DAE6EFC1E1965 /* Bartinter-iOS11.4-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Bartinter-iOS11.4-dummy.m"; sourceTree = "<group>"; };
+		EF4AFBFBC6A9CF1C665896D854DB3DBB /* Pods-BartinterUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BartinterUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		F73C015221B15AB3C80499AE6BB27A3E /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		F8327169EEC1E38AD49B4E36098AA095 /* Pods-BartinterTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BartinterTests.debug.xcconfig"; sourceTree = "<group>"; };
+		FCA8729C44A98D9289AA94B01933D176 /* Pods-BartinterTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-BartinterTests.modulemap"; sourceTree = "<group>"; };
+		FEA46A03E50233499751F9E62F6E9A7B /* Pods-BartinterUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-BartinterUITests.modulemap"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		0823DC011797807C9A6223AE940D08BF /* Frameworks */ = {
+		28C624D26269177D027CC61621B0E835 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				48CF8CDB46087795EE20EE5E228F303D /* Foundation.framework in Frameworks */,
+				8AA6699D0D15653DF192D5E83FE2D7A6 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B229E098DE83E639984ACC925F5ED2A0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2EAD2EFA356FCD926D5F95DB3BBA4445 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C49365433FB79E94D8CF05A4E20E6E09 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E90CBDBBF670ED9C3E914FBB0A1D774F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D803B245F601BFB66F122355CD95A20A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68048C34B0D3DA8A7D5EAC139FF3704E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDCF48807B69BB93FBE70CF0CE6AB022 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC379FC96C5BFD2EA3B6B1F440081429 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		5E0D919E635D23B70123790B8308F8EF /* iOS */ = {
+		1A8FB052A04D6559BBE3165F8667605B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		75461AF56C825641217049AD7AE2DEFD /* Pods-Bartinter */ = {
-			isa = PBXGroup;
-			children = (
-				0A25E4774BDA7BF26B107954C2FB621D /* Info.plist */,
-				58987026ED3D386C217A0511269BAB85 /* Pods-Bartinter.modulemap */,
-				55A82EA4572182B941D09F99AD9DAB83 /* Pods-Bartinter-acknowledgements.markdown */,
-				B5A78A19E4F60FE2D0126981B451A3EA /* Pods-Bartinter-acknowledgements.plist */,
-				D064CF57FB4D5BC1A4E9E6832CE90B1A /* Pods-Bartinter-dummy.m */,
-				9A06072AA7DB9DB5A5882998C98B86B3 /* Pods-Bartinter-frameworks.sh */,
-				982E8342EC1CE5A5F8DFCC44CF18ED3A /* Pods-Bartinter-resources.sh */,
-				FC338DBD5EDD16AADC22BF68E402BFB7 /* Pods-Bartinter-umbrella.h */,
-				02FC6C99C062FBD6EEBC4478F2F6D57E /* Pods-Bartinter.debug.xcconfig */,
-				A80DF62F665BB2268715EFF850BF22F9 /* Pods-Bartinter.release.xcconfig */,
-			);
-			name = "Pods-Bartinter";
-			path = "Target Support Files/Pods-Bartinter";
-			sourceTree = "<group>";
-		};
-		7DB346D0F39D3F0E887471402A8071AB = {
-			isa = PBXGroup;
-			children = (
-				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				B2EC471385B227B2511A70BAFD4C745F /* Products */,
-				B0538C5FF1754C0D42B09D537068EC8E /* Targets Support Files */,
-			);
-			sourceTree = "<group>";
-		};
-		B0538C5FF1754C0D42B09D537068EC8E /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				75461AF56C825641217049AD7AE2DEFD /* Pods-Bartinter */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		B2EC471385B227B2511A70BAFD4C745F /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				ACBFADF172DCB700D8AFC99D3B2FE2B8 /* Pods_Bartinter.framework */,
+				2F7809B66EE515777500C9570346534F /* Bartinter.framework */,
+				593BC16527FC79EBA3025EDE55890432 /* Bartinter.framework */,
+				BB7606D37F0B8590EB28E3842F769DCA /* Pods_Bartinter_Example.framework */,
+				66624BA74A0CB55DDCDDF367E86B7C5E /* Pods_BartinterTests.framework */,
+				B5BFC3E7572A27BF7EDC7041A3489ABB /* Pods_BartinterUITests.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+		29949153F76C7DFC84BEC1F8E62FB7ED /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				5E0D919E635D23B70123790B8308F8EF /* iOS */,
+				9DE52794B81363C384EA8E12973630C1 /* Bartinter-iOS11.4.modulemap */,
+				BFAC57EADE96EFCDDF6CCA6049C805ED /* Bartinter-iOS11.4.xcconfig */,
+				E9B8F6E4C24CE5AD4F4DAE6EFC1E1965 /* Bartinter-iOS11.4-dummy.m */,
+				88C146756F0317B07CDE7CD974D4CE84 /* Bartinter-iOS11.4-Info.plist */,
+				729C87A5999E5005AD687E221E757C6F /* Bartinter-iOS11.4-prefix.pch */,
+				B8E710C02B94C6002A7A6E1C69CB7DE7 /* Bartinter-iOS11.4-umbrella.h */,
+				2D70391EB4929AC8003F8AC41C50751E /* Bartinter-iOS9.0.modulemap */,
+				C2F73A46096AD700C34ECC8AE238D11E /* Bartinter-iOS9.0.xcconfig */,
+				30BBDBC87B99915AEF783217F3D69B8B /* Bartinter-iOS9.0-dummy.m */,
+				36F5BD540A6B6DC7B4D85E2DB32E13DF /* Bartinter-iOS9.0-Info.plist */,
+				609DA4D5F6FABCBBBAAEFCBB10D505C1 /* Bartinter-iOS9.0-prefix.pch */,
+				9CBBD24CBEA50B6B36E4E312212668EB /* Bartinter-iOS9.0-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Pods/Target Support Files/Bartinter-iOS11.4";
+			sourceTree = "<group>";
+		};
+		360D1305CB2C091F16DE910140E00C38 /* Pods-BartinterTests */ = {
+			isa = PBXGroup;
+			children = (
+				FCA8729C44A98D9289AA94B01933D176 /* Pods-BartinterTests.modulemap */,
+				6AF81892FE9AF13F10B217CB6BAF3510 /* Pods-BartinterTests-acknowledgements.markdown */,
+				4EADB6BFB9A0BAC99C3076A4101DBA18 /* Pods-BartinterTests-acknowledgements.plist */,
+				D3F9F6F347F92CE92D229DC36CE4D48F /* Pods-BartinterTests-dummy.m */,
+				AE9C65E81D82E826C164B50B9168A81B /* Pods-BartinterTests-frameworks.sh */,
+				384965B1553A23AE6988A0E55B0562E2 /* Pods-BartinterTests-Info.plist */,
+				8166EB0D4A231A127FAD5023464425C0 /* Pods-BartinterTests-umbrella.h */,
+				F8327169EEC1E38AD49B4E36098AA095 /* Pods-BartinterTests.debug.xcconfig */,
+				A32FDE342B98B53B72DBC4A8D44A97AD /* Pods-BartinterTests.release.xcconfig */,
+			);
+			name = "Pods-BartinterTests";
+			path = "Target Support Files/Pods-BartinterTests";
+			sourceTree = "<group>";
+		};
+		38495CBD50A4084EAC979B39E9D2AECF /* Pods-Bartinter-Example */ = {
+			isa = PBXGroup;
+			children = (
+				735BB2D3914B8497DACE6B552A5AC35F /* Pods-Bartinter-Example.modulemap */,
+				1F80FE3B63B127DEC2A9CA2D811017E0 /* Pods-Bartinter-Example-acknowledgements.markdown */,
+				698BEAF55B1208ECD21DD6F3BF781637 /* Pods-Bartinter-Example-acknowledgements.plist */,
+				20E4EE28955E43925E7EB659226F0DC5 /* Pods-Bartinter-Example-dummy.m */,
+				9FEE1E8980F3AED68F6834A2D69E046C /* Pods-Bartinter-Example-frameworks.sh */,
+				91270B0DCB0C509A2161CC8D1D54EA4B /* Pods-Bartinter-Example-Info.plist */,
+				10DBB2132721BBE6FA0D1F478E06F16D /* Pods-Bartinter-Example-umbrella.h */,
+				80E637D7489EA79045B9AC8BC1BE28BB /* Pods-Bartinter-Example.debug.xcconfig */,
+				4B8E891463830EB212A2FB74C6DD5EDD /* Pods-Bartinter-Example.release.xcconfig */,
+			);
+			name = "Pods-Bartinter-Example";
+			path = "Target Support Files/Pods-Bartinter-Example";
+			sourceTree = "<group>";
+		};
+		50F711965964FCBD19E5E1DD66A4474F /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				CAA870E192AF7FF918D4F4C584CED988 /* Bartinter.podspec */,
+				F73C015221B15AB3C80499AE6BB27A3E /* LICENSE */,
+				209D843195D61663383C60B6370B29A4 /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		79EE899450A0BD5B616E97D8091593AE /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CF0CA0698FAAE965624562F3573D6F8A /* Bartinter */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		86C1EBC252CD13F143E6DA5FB36F0BF0 /* Throttler */ = {
+			isa = PBXGroup;
+			children = (
+				754E62493F66D06F66D30BF7D5A3B8B5 /* Throttler.swift */,
+			);
+			name = Throttler;
+			path = Sources/Bartinter/Throttler;
+			sourceTree = "<group>";
+		};
+		A672AF4B678029F126612213F7225F3F /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				38495CBD50A4084EAC979B39E9D2AECF /* Pods-Bartinter-Example */,
+				360D1305CB2C091F16DE910140E00C38 /* Pods-BartinterTests */,
+				E2034684CA75091AC3B841969C29AAE0 /* Pods-BartinterUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		CF0CA0698FAAE965624562F3573D6F8A /* Bartinter */ = {
+			isa = PBXGroup;
+			children = (
+				4E2E1BD798779B12D2A3840D993E9DDB /* Bartinter.swift */,
+				F4EB59F00C2AC948FE1659E4839BA03F /* Extensions */,
+				50F711965964FCBD19E5E1DD66A4474F /* Pod */,
+				29949153F76C7DFC84BEC1F8E62FB7ED /* Support Files */,
+				86C1EBC252CD13F143E6DA5FB36F0BF0 /* Throttler */,
+			);
+			name = Bartinter;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				79EE899450A0BD5B616E97D8091593AE /* Development Pods */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				1A8FB052A04D6559BBE3165F8667605B /* Products */,
+				A672AF4B678029F126612213F7225F3F /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E2034684CA75091AC3B841969C29AAE0 /* Pods-BartinterUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FEA46A03E50233499751F9E62F6E9A7B /* Pods-BartinterUITests.modulemap */,
+				D57DB5DB11DB276A570F09D0BFDB9BE1 /* Pods-BartinterUITests-acknowledgements.markdown */,
+				D07B0A1020F3C4A129ECF809CFB15F25 /* Pods-BartinterUITests-acknowledgements.plist */,
+				28E672CFDE2034B4BF3B502E39D3F098 /* Pods-BartinterUITests-dummy.m */,
+				0E5A12DC63659B3FBC7FD425187869EC /* Pods-BartinterUITests-frameworks.sh */,
+				48E2D234E7F774D28E558510F97C8086 /* Pods-BartinterUITests-Info.plist */,
+				A81903A4D974989E2840B3B4CD7F7239 /* Pods-BartinterUITests-umbrella.h */,
+				EF4AFBFBC6A9CF1C665896D854DB3DBB /* Pods-BartinterUITests.debug.xcconfig */,
+				7C4365E1303843A5A86F0EACA408C23F /* Pods-BartinterUITests.release.xcconfig */,
+			);
+			name = "Pods-BartinterUITests";
+			path = "Target Support Files/Pods-BartinterUITests";
+			sourceTree = "<group>";
+		};
+		F4EB59F00C2AC948FE1659E4839BA03F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C4032620D7361C6B2FB853AE43B7E557 /* UIKitSwizzling.swift */,
+				7F6079CFF1CF58FE9B04CEC924409E6A /* UIViewController+Bartinter.swift */,
+			);
+			name = Extensions;
+			path = Sources/Bartinter/Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		7A071E210C8DB59DA8C476A03AE10BF3 /* Headers */ = {
+		0832F18EAF34234BD6350706529BEE1E /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				22626A4534284D5BA83493F0AA90EF57 /* Pods-Bartinter-umbrella.h in Headers */,
+				B86A7A066F0F1B08576E89E14C13820E /* Pods-BartinterUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24DED059A0B4B993DA3B9A7F897C071C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABDC381AC32E76CF5A9E3F867E32BD75 /* Bartinter-iOS11.4-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AEA1E7FE6C5C4B860021B8A4BC81E173 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1507EADCC0D826770C122D4916822385 /* Bartinter-iOS9.0-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D1CA666AAA3432102DC1B8F3474D5792 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C29C424524E3A9BCDC430EE63345AC81 /* Pods-BartinterTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAEA93E6D418D67B0FFC224BB53F7B3A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA258790435190A80D3687A37011E5A8 /* Pods-Bartinter-Example-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		C28B40861D8D8E461D4E1A60FE389F57 /* Pods-Bartinter */ = {
+		0E41FFDFB003F4F71B8BFD1941477725 /* Pods-BartinterTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 664EFF93048252BA22759D557DC70E4B /* Build configuration list for PBXNativeTarget "Pods-Bartinter" */;
+			buildConfigurationList = 8452F73B701DBD2CA4389FD9764478C8 /* Build configuration list for PBXNativeTarget "Pods-BartinterTests" */;
 			buildPhases = (
-				F3C2D91EEDB7FDBFD8D49E104BC9EE38 /* Sources */,
-				0823DC011797807C9A6223AE940D08BF /* Frameworks */,
-				7A071E210C8DB59DA8C476A03AE10BF3 /* Headers */,
+				D1CA666AAA3432102DC1B8F3474D5792 /* Headers */,
+				0555BBE324941A8C91D847A986E0708A /* Sources */,
+				C49365433FB79E94D8CF05A4E20E6E09 /* Frameworks */,
+				7AB08E269A42E0214FDA94321F44AE03 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A889B6AE2854C078A57B3A531490E6CB /* PBXTargetDependency */,
+			);
+			name = "Pods-BartinterTests";
+			productName = "Pods-BartinterTests";
+			productReference = 66624BA74A0CB55DDCDDF367E86B7C5E /* Pods_BartinterTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		82652F7E5E9F937B7A3989F272F1B930 /* Pods-BartinterUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B470CAD238D8903D2D7E8C8AA82D6C2D /* Build configuration list for PBXNativeTarget "Pods-BartinterUITests" */;
+			buildPhases = (
+				0832F18EAF34234BD6350706529BEE1E /* Headers */,
+				4F9D85B74A69D08C4685801B6A11F290 /* Sources */,
+				B229E098DE83E639984ACC925F5ED2A0 /* Frameworks */,
+				E6B6A9B418FF9DDD1CD57A3C85C69D84 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FFC61D0576774BE0FF2BF3DF39F49F84 /* PBXTargetDependency */,
+			);
+			name = "Pods-BartinterUITests";
+			productName = "Pods-BartinterUITests";
+			productReference = B5BFC3E7572A27BF7EDC7041A3489ABB /* Pods_BartinterUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		8BD3D137AA810270B0DD0D545778F4A0 /* Bartinter-iOS11.4 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA4EAAB4400EA5DDA66B44D72A59B2DF /* Build configuration list for PBXNativeTarget "Bartinter-iOS11.4" */;
+			buildPhases = (
+				24DED059A0B4B993DA3B9A7F897C071C /* Headers */,
+				A14529F6BAE678344D0BDD565A4C6552 /* Sources */,
+				D803B245F601BFB66F122355CD95A20A /* Frameworks */,
+				E0994A5807D014D8654BB7F9B25BE114 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "Pods-Bartinter";
-			productName = "Pods-Bartinter";
-			productReference = ACBFADF172DCB700D8AFC99D3B2FE2B8 /* Pods_Bartinter.framework */;
+			name = "Bartinter-iOS11.4";
+			productName = "Bartinter-iOS11.4";
+			productReference = 2F7809B66EE515777500C9570346534F /* Bartinter.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D9B117975A84627ABF1A89CE11A393BC /* Bartinter-iOS9.0 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B632B94064FDAFD21CC8B81D394475F1 /* Build configuration list for PBXNativeTarget "Bartinter-iOS9.0" */;
+			buildPhases = (
+				AEA1E7FE6C5C4B860021B8A4BC81E173 /* Headers */,
+				E783A738D07B426351057A6DC5731EEE /* Sources */,
+				EDCF48807B69BB93FBE70CF0CE6AB022 /* Frameworks */,
+				AD38A216E1BA2535057984A32974335C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Bartinter-iOS9.0";
+			productName = "Bartinter-iOS9.0";
+			productReference = 593BC16527FC79EBA3025EDE55890432 /* Bartinter.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F7C8C31B74F99933E77D19B654EFBA2F /* Pods-Bartinter-Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CCF2D2058DADBA2C991180844C1F078C /* Build configuration list for PBXNativeTarget "Pods-Bartinter-Example" */;
+			buildPhases = (
+				FAEA93E6D418D67B0FFC224BB53F7B3A /* Headers */,
+				A9F0E9A55323D5C0374D5ABD1B3FFA26 /* Sources */,
+				28C624D26269177D027CC61621B0E835 /* Frameworks */,
+				9E69B0FF1A7989DED42ED2533D604C6A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				661715A2845DCB38A46BFBE13194E70B /* PBXTargetDependency */,
+			);
+			name = "Pods-Bartinter-Example";
+			productName = "Pods-Bartinter-Example";
+			productReference = BB7606D37F0B8590EB28E3842F769DCA /* Pods_Bartinter_Example.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0930;
-				LastUpgradeCheck = 0930;
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
 			};
-			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 10.0";
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = B2EC471385B227B2511A70BAFD4C745F /* Products */;
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 1A8FB052A04D6559BBE3165F8667605B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C28B40861D8D8E461D4E1A60FE389F57 /* Pods-Bartinter */,
+				8BD3D137AA810270B0DD0D545778F4A0 /* Bartinter-iOS11.4 */,
+				D9B117975A84627ABF1A89CE11A393BC /* Bartinter-iOS9.0 */,
+				F7C8C31B74F99933E77D19B654EFBA2F /* Pods-Bartinter-Example */,
+				0E41FFDFB003F4F71B8BFD1941477725 /* Pods-BartinterTests */,
+				82652F7E5E9F937B7A3989F272F1B930 /* Pods-BartinterUITests */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		7AB08E269A42E0214FDA94321F44AE03 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9E69B0FF1A7989DED42ED2533D604C6A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD38A216E1BA2535057984A32974335C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0994A5807D014D8654BB7F9B25BE114 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E6B6A9B418FF9DDD1CD57A3C85C69D84 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
-		F3C2D91EEDB7FDBFD8D49E104BC9EE38 /* Sources */ = {
+		0555BBE324941A8C91D847A986E0708A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8A9B67F667BB280311A35555802D918D /* Pods-Bartinter-dummy.m in Sources */,
+				B569BC2AB232D435D1334B9DD53C89A6 /* Pods-BartinterTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F9D85B74A69D08C4685801B6A11F290 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B636316AE1B2FE5B1924669EE026A1BC /* Pods-BartinterUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A14529F6BAE678344D0BDD565A4C6552 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A906A195E8B52E59DD9E2DE8257B99E /* Bartinter-iOS11.4-dummy.m in Sources */,
+				8FC5C53C39347266BDF2CBFABA26B3D7 /* Bartinter.swift in Sources */,
+				B849FD052648E9512E1AD22A4378BB05 /* Throttler.swift in Sources */,
+				41AA3DE04D6E030907661F3E9CC528CC /* UIKitSwizzling.swift in Sources */,
+				C0AC63ABBF06A61F3E5AAC5C191849E1 /* UIViewController+Bartinter.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9F0E9A55323D5C0374D5ABD1B3FFA26 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C1D4EE1C9D493B8E1D04F322257E606 /* Pods-Bartinter-Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E783A738D07B426351057A6DC5731EEE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81E4FC87DEDBA4F8CF55957AF15DF355 /* Bartinter-iOS9.0-dummy.m in Sources */,
+				709D35BD913960B3DCBA765E54FD768B /* Bartinter.swift in Sources */,
+				F4B01882CEC687A8DE026D9BDE0F64E2 /* Throttler.swift in Sources */,
+				910638ABFCDE6C319D272E8B5A088AC1 /* UIKitSwizzling.swift in Sources */,
+				22DE104034D63FCAA302EEB79E4F66C5 /* UIViewController+Bartinter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		661715A2845DCB38A46BFBE13194E70B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Bartinter-iOS9.0";
+			target = D9B117975A84627ABF1A89CE11A393BC /* Bartinter-iOS9.0 */;
+			targetProxy = 69DFE6435B70803A8BCAFFE20758A12C /* PBXContainerItemProxy */;
+		};
+		A889B6AE2854C078A57B3A531490E6CB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Bartinter-iOS11.4";
+			target = 8BD3D137AA810270B0DD0D545778F4A0 /* Bartinter-iOS11.4 */;
+			targetProxy = 6D02B3874F93F28C405F7BF269579024 /* PBXContainerItemProxy */;
+		};
+		FFC61D0576774BE0FF2BF3DF39F49F84 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Bartinter-iOS11.4";
+			target = 8BD3D137AA810270B0DD0D545778F4A0 /* Bartinter-iOS11.4 */;
+			targetProxy = 0DC419673B9AE90F2A8B756F49A26B53 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
-		2A473BC35D6E939D809C9B6178C255CC /* Debug */ = {
+		6B8E78D7956E931C56027AF0D07ECB0D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 02FC6C99C062FBD6EEBC4478F2F6D57E /* Pods-Bartinter.debug.xcconfig */;
+			baseConfigurationReference = F8327169EEC1E38AD49B4E36098AA095 /* Pods-BartinterTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -184,7 +621,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Bartinter/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-BartinterTests/Pods-BartinterTests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -193,7 +630,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Bartinter/Pods-Bartinter.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-BartinterTests/Pods-BartinterTests.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -207,7 +644,82 @@
 			};
 			name = Debug;
 		};
-		5DC0083F57E9AB706B46C5B5D73B38D8 /* Debug */ = {
+		8A385E0059D1A5337A207D75BC5A15A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7C4365E1303843A5A86F0EACA408C23F /* Pods-BartinterUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-BartinterUITests/Pods-BartinterUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-BartinterUITests/Pods-BartinterUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8B63D6E8AF81AFFFA25F04B97C48BC93 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BFAC57EADE96EFCDDF6CCA6049C805ED /* Bartinter-iOS11.4.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Bartinter-iOS11.4/Bartinter-iOS11.4-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Bartinter-iOS11.4/Bartinter-iOS11.4-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Bartinter-iOS11.4/Bartinter-iOS11.4.modulemap";
+				PRODUCT_MODULE_NAME = Bartinter;
+				PRODUCT_NAME = Bartinter;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8F17DC3A99F99FBAD606CE6963886315 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -239,8 +751,66 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGNING_ALLOWED = NO;
-				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		916E0404255105F480DC4950B7625F7A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -260,19 +830,95 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
-				MTL_ENABLE_DEBUG_INFO = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
 		};
-		98743324ED435C597683194DAA4E5223 /* Release */ = {
+		A1D78AF457F91C8E0C3BD08060C34E5C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A80DF62F665BB2268715EFF850BF22F9 /* Pods-Bartinter.release.xcconfig */;
+			baseConfigurationReference = C2F73A46096AD700C34ECC8AE238D11E /* Bartinter-iOS9.0.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Bartinter-iOS9.0/Bartinter-iOS9.0-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Bartinter-iOS9.0/Bartinter-iOS9.0-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Bartinter-iOS9.0/Bartinter-iOS9.0.modulemap";
+				PRODUCT_MODULE_NAME = Bartinter;
+				PRODUCT_NAME = Bartinter;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		BB7CA5D02A8D7FB25962BA785EDCCA51 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 80E637D7489EA79045B9AC8BC1BE28BB /* Pods-Bartinter-Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Bartinter-Example/Pods-Bartinter-Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Bartinter-Example/Pods-Bartinter-Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		BD4B00F28948686AF495904BF9A38CF2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A32FDE342B98B53B72DBC4A8D44A97AD /* Pods-BartinterTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -285,7 +931,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Bartinter/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-BartinterTests/Pods-BartinterTests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -294,7 +940,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Bartinter/Pods-Bartinter.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-BartinterTests/Pods-BartinterTests.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -309,86 +955,210 @@
 			};
 			name = Release;
 		};
-		AEEA80476F98EB645C4DD53EB2BB6D88 /* Release */ = {
+		E56B3F21D335B74C15FE5BFC65A137FD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C2F73A46096AD700C34ECC8AE238D11E /* Bartinter-iOS9.0.xcconfig */;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGNING_ALLOWED = NO;
-				CODE_SIGNING_REQUIRED = NO;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_RELEASE=1",
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Bartinter-iOS9.0/Bartinter-iOS9.0-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Bartinter-iOS9.0/Bartinter-iOS9.0-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
 				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
+				MODULEMAP_FILE = "Target Support Files/Bartinter-iOS9.0/Bartinter-iOS9.0.modulemap";
+				PRODUCT_MODULE_NAME = Bartinter;
+				PRODUCT_NAME = Bartinter;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E5AC0851EB287E29F19004E72970297C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BFAC57EADE96EFCDDF6CCA6049C805ED /* Bartinter-iOS11.4.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Bartinter-iOS11.4/Bartinter-iOS11.4-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Bartinter-iOS11.4/Bartinter-iOS11.4-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Bartinter-iOS11.4/Bartinter-iOS11.4.modulemap";
+				PRODUCT_MODULE_NAME = Bartinter;
+				PRODUCT_NAME = Bartinter;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E96EA0A39D3512D7EB334266DB074A8F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B8E891463830EB212A2FB74C6DD5EDD /* Pods-Bartinter-Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Bartinter-Example/Pods-Bartinter-Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Bartinter-Example/Pods-Bartinter-Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
+		};
+		F1B01C9B54B7E77745F00FE3E32C50F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF4AFBFBC6A9CF1C665896D854DB3DBB /* Pods-BartinterUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-BartinterUITests/Pods-BartinterUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-BartinterUITests/Pods-BartinterUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5DC0083F57E9AB706B46C5B5D73B38D8 /* Debug */,
-				AEEA80476F98EB645C4DD53EB2BB6D88 /* Release */,
+				916E0404255105F480DC4950B7625F7A /* Debug */,
+				8F17DC3A99F99FBAD606CE6963886315 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		664EFF93048252BA22759D557DC70E4B /* Build configuration list for PBXNativeTarget "Pods-Bartinter" */ = {
+		8452F73B701DBD2CA4389FD9764478C8 /* Build configuration list for PBXNativeTarget "Pods-BartinterTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2A473BC35D6E939D809C9B6178C255CC /* Debug */,
-				98743324ED435C597683194DAA4E5223 /* Release */,
+				6B8E78D7956E931C56027AF0D07ECB0D /* Debug */,
+				BD4B00F28948686AF495904BF9A38CF2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B470CAD238D8903D2D7E8C8AA82D6C2D /* Build configuration list for PBXNativeTarget "Pods-BartinterUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1B01C9B54B7E77745F00FE3E32C50F9 /* Debug */,
+				8A385E0059D1A5337A207D75BC5A15A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B632B94064FDAFD21CC8B81D394475F1 /* Build configuration list for PBXNativeTarget "Bartinter-iOS9.0" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E56B3F21D335B74C15FE5BFC65A137FD /* Debug */,
+				A1D78AF457F91C8E0C3BD08060C34E5C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CCF2D2058DADBA2C991180844C1F078C /* Build configuration list for PBXNativeTarget "Pods-Bartinter-Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB7CA5D02A8D7FB25962BA785EDCCA51 /* Debug */,
+				E96EA0A39D3512D7EB334266DB074A8F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA4EAAB4400EA5DDA66B44D72A59B2DF /* Build configuration list for PBXNativeTarget "Bartinter-iOS11.4" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E5AC0851EB287E29F19004E72970297C /* Debug */,
+				8B63D6E8AF81AFFFA25F04B97C48BC93 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 }

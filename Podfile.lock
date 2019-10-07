@@ -1,3 +1,16 @@
-PODFILE CHECKSUM: 0a3a58a389ef5f4669bc0aef870f6031ae9941d4
+PODS:
+  - Bartinter (0.0.5)
 
-COCOAPODS: 1.5.3
+DEPENDENCIES:
+  - Bartinter (from `.`)
+
+EXTERNAL SOURCES:
+  Bartinter:
+    :path: "."
+
+SPEC CHECKSUMS:
+  Bartinter: 581325e1df966db27f6a131741931ca0a1df9ce1
+
+PODFILE CHECKSUM: f8f99b32cba6040a497ea4874fddfde93f80ebe5
+
+COCOAPODS: 1.7.5
