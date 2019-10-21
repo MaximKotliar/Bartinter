@@ -8,7 +8,7 @@ import Foundation
 
 public class Throttler {
 
-    private let queue = DispatchQueue.global(qos: .background)
+    private let queue = DispatchQueue.global(qos: .userInteractive)
 
     private var job: DispatchWorkItem? {
         didSet {

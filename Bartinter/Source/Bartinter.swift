@@ -58,8 +58,8 @@ public final class Bartinter: UIViewController {
     }
 
     private func getLayer(completion: @escaping (CALayer) -> Void) {
-        DispatchQueue.main.async { [weak self] in
-            guard let layer = self?.parent?.view.layer else { return }
+        DispatchQueue.main.async {
+            guard let layer = UIApplication.shared.keyWindow?.layer else { return }
             completion(layer)
         }
     }
@@ -69,15 +69,21 @@ public final class Bartinter: UIViewController {
         let size = UIApplication.shared.statusBarFrame.size
         getLayer { [weak self] layer in
             self?.throttler.throttle {
+                var luminance: CGFloat = 0
+                defer {
+                    DispatchQueue.main.async {
+                        completion(luminance)
+                    }
+                }
+                guard let layer: CALayer = NSKeyedUnarchiver.unarchiveObject(with: NSKeyedArchiver.archivedData(withRootObject: layer)) as? CALayer else { return }
+                layer.delegate = nil
                 UIGraphicsBeginImageContextWithOptions(size, false, scale)
                 guard let context = UIGraphicsGetCurrentContext() else { return }
                 layer.render(in: context)
                 let image = UIGraphicsGetImageFromCurrentImageContext()
                 guard let averageLuminance = image?.averageLuminance else { return }
                 UIGraphicsEndImageContext()
-                DispatchQueue.main.async {
-                    completion(averageLuminance)
-                }
+                luminance = averageLuminance
             }
         }
     }
