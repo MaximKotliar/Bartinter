@@ -75,8 +75,6 @@ public final class Bartinter: UIViewController {
                         completion(luminance)
                     }
                 }
-                guard let layer: CALayer = NSKeyedUnarchiver.unarchiveObject(with: NSKeyedArchiver.archivedData(withRootObject: layer)) as? CALayer else { return }
-                layer.delegate = nil
                 UIGraphicsBeginImageContextWithOptions(size, false, scale)
                 guard let context = UIGraphicsGetCurrentContext() else { return }
                 layer.render(in: context)
