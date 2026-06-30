@@ -23,11 +23,11 @@ private struct BartinterInstallerView: UIViewControllerRepresentable {
     }
 }
 
-public final class _BartinterInstaller: UIViewController {
+final class _BartinterInstaller: UIViewController {
     private let configuration: Bartinter.Configuration
-    public var isActiveTinting: Bool
+    var isActiveTinting: Bool
 
-    public init(configuration: Bartinter.Configuration, isActive: Bool) {
+    init(configuration: Bartinter.Configuration, isActive: Bool) {
         self.configuration = configuration
         self.isActiveTinting = isActive
         super.init(nibName: nil, bundle: nil)
@@ -37,17 +37,17 @@ public final class _BartinterInstaller: UIViewController {
     @available(*, unavailable)
     required init?(coder: NSCoder) { fatalError("init(coder:) is not supported") }
 
-    override public func didMove(toParent parent: UIViewController?) {
+    override func didMove(toParent parent: UIViewController?) {
         super.didMove(toParent: parent)
         installIfPossible()
     }
 
-    override public func viewDidAppear(_ animated: Bool) {
+    override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         installIfPossible()
     }
 
-    public func installIfPossible() {
+    func installIfPossible() {
         guard let scene = view.window?.windowScene else { return }
         Bartinter.install(in: scene, configuration: configuration)
     }
