@@ -3,20 +3,18 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		195444AC20E14E66004B03C5 /* BartinterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195444AB20E14E66004B03C5 /* BartinterTests.swift */; };
 		1967AF9120D96F480043C0E7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1967AF9020D96F480043C0E7 /* ViewController.swift */; };
-		1967AFA920D96F7C0043C0E7 /* Throttler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1967AFA120D96F7C0043C0E7 /* Throttler.swift */; };
-		1967AFAC20D96F7C0043C0E7 /* Bartinter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1967AFA420D96F7C0043C0E7 /* Bartinter.swift */; };
-		1967AFAE20D96F7C0043C0E7 /* UIKitSwizzling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1967AFA720D96F7C0043C0E7 /* UIKitSwizzling.swift */; };
-		1967AFAF20D96F7C0043C0E7 /* UIViewController+Bartinter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1967AFA820D96F7C0043C0E7 /* UIViewController+Bartinter.swift */; };
 		1967AFB220D970180043C0E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1967AFB120D970180043C0E7 /* AppDelegate.swift */; };
 		19F320E020E14F56008D1587 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19F320DF20E14F56008D1587 /* Main.storyboard */; };
 		19F320E820E16392008D1587 /* BartinterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F320E720E16392008D1587 /* BartinterUITests.swift */; };
-		4A5EEBAA4271EB653286F146 /* Pods_Bartinter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB93EACE0572CDC321F11588 /* Pods_Bartinter.framework */; };
+		32D5621C747CB13CA543FC8C /* Pods_BartinterUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C9BDB1C2E12B3F6FF94FF2A /* Pods_BartinterUITests.framework */; };
+		58BDD89BB23185C54EC904D3 /* Pods_BartinterTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2397E70F85DF3081BBE08952 /* Pods_BartinterTests.framework */; };
+		DC4D3987E39FAEBC1F2BE6A3 /* Pods_Bartinter_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6311A82DA84D585172C7020 /* Pods_Bartinter_Example.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,24 +35,28 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		03D95289A8E190F82A2760C9 /* Pods-Bartinter-Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bartinter-Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-Bartinter-Example/Pods-Bartinter-Example.release.xcconfig"; sourceTree = "<group>"; };
 		195444A920E14E66004B03C5 /* BartinterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BartinterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		195444AB20E14E66004B03C5 /* BartinterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BartinterTests.swift; sourceTree = "<group>"; };
 		195444AD20E14E66004B03C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1967AF8B20D96F480043C0E7 /* Bartinter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bartinter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1967AF8B20D96F480043C0E7 /* Bartinter-Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bartinter-Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1967AF9020D96F480043C0E7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1967AF9A20D96F4A0043C0E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1967AFA120D96F7C0043C0E7 /* Throttler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Throttler.swift; sourceTree = "<group>"; };
-		1967AFA420D96F7C0043C0E7 /* Bartinter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bartinter.swift; sourceTree = "<group>"; };
-		1967AFA720D96F7C0043C0E7 /* UIKitSwizzling.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIKitSwizzling.swift; sourceTree = "<group>"; };
-		1967AFA820D96F7C0043C0E7 /* UIViewController+Bartinter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Bartinter.swift"; sourceTree = "<group>"; };
 		1967AFB120D970180043C0E7 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		19F320DF20E14F56008D1587 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		19F320E520E16392008D1587 /* BartinterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BartinterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		19F320E720E16392008D1587 /* BartinterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BartinterUITests.swift; sourceTree = "<group>"; };
 		19F320E920E16392008D1587 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2397E70F85DF3081BBE08952 /* Pods_BartinterTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BartinterTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D74A858074251C8F4B9966D /* Pods-BartinterUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BartinterUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BartinterUITests/Pods-BartinterUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		58D96E9E3C5D3021DE90D28F /* Pods-Bartinter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bartinter.release.xcconfig"; path = "Pods/Target Support Files/Pods-Bartinter/Pods-Bartinter.release.xcconfig"; sourceTree = "<group>"; };
 		77765DE7D483E9611163180B /* Pods-Bartinter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bartinter.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Bartinter/Pods-Bartinter.debug.xcconfig"; sourceTree = "<group>"; };
-		CB93EACE0572CDC321F11588 /* Pods_Bartinter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bartinter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		946523C24CD6D37E07726C6E /* Pods-Bartinter-Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bartinter-Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Bartinter-Example/Pods-Bartinter-Example.debug.xcconfig"; sourceTree = "<group>"; };
+		9C9BDB1C2E12B3F6FF94FF2A /* Pods_BartinterUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BartinterUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E1260034BD895BEB051746B /* Pods-BartinterTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BartinterTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BartinterTests/Pods-BartinterTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C75C4A5BAFC3B5402474F12B /* Pods-BartinterUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BartinterUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BartinterUITests/Pods-BartinterUITests.release.xcconfig"; sourceTree = "<group>"; };
+		D6311A82DA84D585172C7020 /* Pods_Bartinter_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bartinter_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F49176049C427EF587A62D31 /* Pods-BartinterTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BartinterTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BartinterTests/Pods-BartinterTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58BDD89BB23185C54EC904D3 /* Pods_BartinterTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,7 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4A5EEBAA4271EB653286F146 /* Pods_Bartinter.framework in Frameworks */,
+				DC4D3987E39FAEBC1F2BE6A3 /* Pods_Bartinter_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32D5621C747CB13CA543FC8C /* Pods_BartinterUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,7 +99,7 @@
 		1967AF8220D96F480043C0E7 = {
 			isa = PBXGroup;
 			children = (
-				1967AF8D20D96F480043C0E7 /* Bartinter */,
+				1967AF8D20D96F480043C0E7 /* Bartinter-Example */,
 				195444AA20E14E66004B03C5 /* BartinterTests */,
 				19F320E620E16392008D1587 /* BartinterUITests */,
 				1967AF8C20D96F480043C0E7 /* Products */,
@@ -107,50 +111,22 @@
 		1967AF8C20D96F480043C0E7 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1967AF8B20D96F480043C0E7 /* Bartinter.app */,
+				1967AF8B20D96F480043C0E7 /* Bartinter-Example.app */,
 				195444A920E14E66004B03C5 /* BartinterTests.xctest */,
 				19F320E520E16392008D1587 /* BartinterUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		1967AF8D20D96F480043C0E7 /* Bartinter */ = {
+		1967AF8D20D96F480043C0E7 /* Bartinter-Example */ = {
 			isa = PBXGroup;
 			children = (
-				1967AFB020D96F9A0043C0E7 /* Source */,
 				1967AFB120D970180043C0E7 /* AppDelegate.swift */,
 				19F320DF20E14F56008D1587 /* Main.storyboard */,
 				1967AF9020D96F480043C0E7 /* ViewController.swift */,
 				1967AF9A20D96F4A0043C0E7 /* Info.plist */,
 			);
-			path = Bartinter;
-			sourceTree = "<group>";
-		};
-		1967AFA020D96F7C0043C0E7 /* Throttler */ = {
-			isa = PBXGroup;
-			children = (
-				1967AFA120D96F7C0043C0E7 /* Throttler.swift */,
-			);
-			path = Throttler;
-			sourceTree = "<group>";
-		};
-		1967AFA620D96F7C0043C0E7 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				1967AFA720D96F7C0043C0E7 /* UIKitSwizzling.swift */,
-				1967AFA820D96F7C0043C0E7 /* UIViewController+Bartinter.swift */,
-			);
-			path = Extensions;
-			sourceTree = "<group>";
-		};
-		1967AFB020D96F9A0043C0E7 /* Source */ = {
-			isa = PBXGroup;
-			children = (
-				1967AFA020D96F7C0043C0E7 /* Throttler */,
-				1967AFA620D96F7C0043C0E7 /* Extensions */,
-				1967AFA420D96F7C0043C0E7 /* Bartinter.swift */,
-			);
-			path = Source;
+			path = "Bartinter-Example";
 			sourceTree = "<group>";
 		};
 		19F320E620E16392008D1587 /* BartinterUITests */ = {
@@ -165,7 +141,9 @@
 		68BE034EC4BE6FE7E819F493 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				CB93EACE0572CDC321F11588 /* Pods_Bartinter.framework */,
+				D6311A82DA84D585172C7020 /* Pods_Bartinter_Example.framework */,
+				2397E70F85DF3081BBE08952 /* Pods_BartinterTests.framework */,
+				9C9BDB1C2E12B3F6FF94FF2A /* Pods_BartinterUITests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -175,6 +153,12 @@
 			children = (
 				77765DE7D483E9611163180B /* Pods-Bartinter.debug.xcconfig */,
 				58D96E9E3C5D3021DE90D28F /* Pods-Bartinter.release.xcconfig */,
+				946523C24CD6D37E07726C6E /* Pods-Bartinter-Example.debug.xcconfig */,
+				03D95289A8E190F82A2760C9 /* Pods-Bartinter-Example.release.xcconfig */,
+				9E1260034BD895BEB051746B /* Pods-BartinterTests.debug.xcconfig */,
+				F49176049C427EF587A62D31 /* Pods-BartinterTests.release.xcconfig */,
+				3D74A858074251C8F4B9966D /* Pods-BartinterUITests.debug.xcconfig */,
+				C75C4A5BAFC3B5402474F12B /* Pods-BartinterUITests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -186,9 +170,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 195444B020E14E66004B03C5 /* Build configuration list for PBXNativeTarget "BartinterTests" */;
 			buildPhases = (
+				166DB5DAA4E0F490A75D1396 /* [CP] Check Pods Manifest.lock */,
 				195444A520E14E66004B03C5 /* Sources */,
 				195444A620E14E66004B03C5 /* Frameworks */,
 				195444A720E14E66004B03C5 /* Resources */,
+				61974285038CFB0BED9A9FF8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -200,31 +186,34 @@
 			productReference = 195444A920E14E66004B03C5 /* BartinterTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		1967AF8A20D96F480043C0E7 /* Bartinter */ = {
+		1967AF8A20D96F480043C0E7 /* Bartinter-Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1967AF9D20D96F4A0043C0E7 /* Build configuration list for PBXNativeTarget "Bartinter" */;
+			buildConfigurationList = 1967AF9D20D96F4A0043C0E7 /* Build configuration list for PBXNativeTarget "Bartinter-Example" */;
 			buildPhases = (
 				6931EEB89C8B453495BA7365 /* [CP] Check Pods Manifest.lock */,
 				1967AF8720D96F480043C0E7 /* Sources */,
 				1967AF8820D96F480043C0E7 /* Frameworks */,
 				1967AF8920D96F480043C0E7 /* Resources */,
+				AD468B876D1E85EC84CB4E7F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = Bartinter;
+			name = "Bartinter-Example";
 			productName = Bartinter;
-			productReference = 1967AF8B20D96F480043C0E7 /* Bartinter.app */;
+			productReference = 1967AF8B20D96F480043C0E7 /* Bartinter-Example.app */;
 			productType = "com.apple.product-type.application";
 		};
 		19F320E420E16392008D1587 /* BartinterUITests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 19F320EC20E16392008D1587 /* Build configuration list for PBXNativeTarget "BartinterUITests" */;
 			buildPhases = (
+				3A9816193AF914D0A090F340 /* [CP] Check Pods Manifest.lock */,
 				19F320E120E16392008D1587 /* Sources */,
 				19F320E220E16392008D1587 /* Frameworks */,
 				19F320E320E16392008D1587 /* Resources */,
+				42D6F3FC627104E24E31E2D5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -272,7 +261,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1967AF8A20D96F480043C0E7 /* Bartinter */,
+				1967AF8A20D96F480043C0E7 /* Bartinter-Example */,
 				195444A820E14E66004B03C5 /* BartinterTests */,
 				19F320E420E16392008D1587 /* BartinterUITests */,
 			);
@@ -305,6 +294,84 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		166DB5DAA4E0F490A75D1396 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BartinterTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3A9816193AF914D0A090F340 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BartinterUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		42D6F3FC627104E24E31E2D5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BartinterUITests/Pods-BartinterUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BartinterUITests/Pods-BartinterUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BartinterUITests/Pods-BartinterUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		61974285038CFB0BED9A9FF8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BartinterTests/Pods-BartinterTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BartinterTests/Pods-BartinterTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BartinterTests/Pods-BartinterTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		6931EEB89C8B453495BA7365 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -316,11 +383,28 @@
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Bartinter-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-Bartinter-Example-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AD468B876D1E85EC84CB4E7F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Bartinter-Example/Pods-Bartinter-Example-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Bartinter-Example/Pods-Bartinter-Example-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Bartinter-Example/Pods-Bartinter-Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -340,10 +424,6 @@
 			files = (
 				1967AFB220D970180043C0E7 /* AppDelegate.swift in Sources */,
 				1967AF9120D96F480043C0E7 /* ViewController.swift in Sources */,
-				1967AFAF20D96F7C0043C0E7 /* UIViewController+Bartinter.swift in Sources */,
-				1967AFA920D96F7C0043C0E7 /* Throttler.swift in Sources */,
-				1967AFAE20D96F7C0043C0E7 /* UIKitSwizzling.swift in Sources */,
-				1967AFAC20D96F7C0043C0E7 /* Bartinter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -360,12 +440,12 @@
 /* Begin PBXTargetDependency section */
 		195444AF20E14E66004B03C5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 1967AF8A20D96F480043C0E7 /* Bartinter */;
+			target = 1967AF8A20D96F480043C0E7 /* Bartinter-Example */;
 			targetProxy = 195444AE20E14E66004B03C5 /* PBXContainerItemProxy */;
 		};
 		19F320EB20E16392008D1587 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 1967AF8A20D96F480043C0E7 /* Bartinter */;
+			target = 1967AF8A20D96F480043C0E7 /* Bartinter-Example */;
 			targetProxy = 19F320EA20E16392008D1587 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -373,6 +453,7 @@
 /* Begin XCBuildConfiguration section */
 		195444B120E14E66004B03C5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9E1260034BD895BEB051746B /* Pods-BartinterTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -387,12 +468,13 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Bartinter.app/Bartinter";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Bartinter-Example.app/Bartinter-Example";
 			};
 			name = Debug;
 		};
 		195444B220E14E66004B03C5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F49176049C427EF587A62D31 /* Pods-BartinterTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -407,7 +489,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Bartinter.app/Bartinter";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Bartinter-Example.app/Bartinter-Example";
 			};
 			name = Release;
 		};
@@ -527,12 +609,12 @@
 		};
 		1967AF9E20D96F4A0043C0E7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 77765DE7D483E9611163180B /* Pods-Bartinter.debug.xcconfig */;
+			baseConfigurationReference = 946523C24CD6D37E07726C6E /* Pods-Bartinter-Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = U99CNQ7H99;
-				INFOPLIST_FILE = Bartinter/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Bartinter-Example/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -547,12 +629,12 @@
 		};
 		1967AF9F20D96F4A0043C0E7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 58D96E9E3C5D3021DE90D28F /* Pods-Bartinter.release.xcconfig */;
+			baseConfigurationReference = 03D95289A8E190F82A2760C9 /* Pods-Bartinter-Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = U99CNQ7H99;
-				INFOPLIST_FILE = Bartinter/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Bartinter-Example/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -567,6 +649,7 @@
 		};
 		19F320ED20E16392008D1587 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D74A858074251C8F4B9966D /* Pods-BartinterUITests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = BartinterUITests/Info.plist;
@@ -577,14 +660,16 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.maximkotliar.BartinterUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Bartinter;
+				TEST_TARGET_NAME = "Bartinter-Example";
 			};
 			name = Debug;
 		};
 		19F320EE20E16392008D1587 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C75C4A5BAFC3B5402474F12B /* Pods-BartinterUITests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = BartinterUITests/Info.plist;
@@ -595,9 +680,10 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.maximkotliar.BartinterUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Bartinter;
+				TEST_TARGET_NAME = "Bartinter-Example";
 			};
 			name = Release;
 		};
@@ -622,7 +708,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1967AF9D20D96F4A0043C0E7 /* Build configuration list for PBXNativeTarget "Bartinter" */ = {
+		1967AF9D20D96F4A0043C0E7 /* Build configuration list for PBXNativeTarget "Bartinter-Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1967AF9E20D96F4A0043C0E7 /* Debug */,

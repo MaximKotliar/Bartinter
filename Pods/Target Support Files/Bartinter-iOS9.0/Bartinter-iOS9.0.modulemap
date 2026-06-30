@@ -1,0 +1,6 @@
+framework module Bartinter {
+  umbrella header "Bartinter-iOS9.0-umbrella.h"
+
+  export *
+  module * { export * }
+}
