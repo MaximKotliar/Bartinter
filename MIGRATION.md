@@ -41,6 +41,7 @@ final class MyViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         addChild(bartinter)
+        bartinter.didMove(toParent: self)
         bartinter.tint(self)
         // Optional: re-sample when a scroll view scrolls
         bartinter.observe(tableView)

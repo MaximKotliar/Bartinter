@@ -61,6 +61,7 @@ final class GalleryViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         addChild(bartinter)
+        bartinter.didMove(toParent: self)
         bartinter.tint(self)              // start sampling this screen
         bartinter.observe(collectionView) // re-sample on scroll (explicit opt-in)
     }
@@ -95,7 +96,7 @@ public struct Configuration {
 }
 
 // Change app-wide defaults once at launch (main actor):
-Bartinter.Configuration.default.midPoint = 0.6
+Bartinter.Configuration.default.midPoint = 0.55
 ```
 
 ## Known limitation
