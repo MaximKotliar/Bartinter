@@ -18,4 +18,19 @@ final class TintsStatusBarTests: XCTestCase {
         XCTAssertEqual(root.children.count, 1)           // nothing was wrapped/added
         XCTAssertTrue(root.children.contains(installer)) // installer still attached, not restructured
     }
+
+    func testApplyForwardsActiveStateToContainerController() {
+        let container = BartinterContainerController(content: UIViewController(), configuration: .init())
+        container.loadViewIfNeeded()
+
+        let installer = _BartinterInstaller(configuration: .init(), isActive: false)
+        installer.apply(to: container)
+        XCTAssertFalse(container.bartinter.isActive)   // paused
+
+        installer.isActiveTinting = true
+        installer.apply(to: container)
+        XCTAssertTrue(container.bartinter.isActive)     // resumed
+
+        installer.apply(to: nil)                         // nil container is a safe no-op
+    }
 }

@@ -110,7 +110,7 @@ extension RegionCapture {
                     var probe = [UInt8](repeating: 0, count: 4)
                     texture.getBytes(&probe, bytesPerRow: 4,
                                      from: MTLRegionMake2D(0, 0, 1, 1), mipmapLevel: 0)
-                    let gpuHasOutput = probe.contains { $0 != 0 }
+                    let gpuHasOutput = probe[3] != 0   // bgra8Unorm: byte 3 is alpha; opaque rendered output has alpha > 0
 
                     if gpuHasOutput, let ciImg = CIImage(mtlTexture: texture, options: nil) {
                         return ImageBox(image: ciImg, area: rect.width * rect.height)

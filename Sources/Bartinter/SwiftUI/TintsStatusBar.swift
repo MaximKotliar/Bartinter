@@ -50,5 +50,11 @@ final class _BartinterInstaller: UIViewController {
     func installIfPossible() {
         guard let scene = view.window?.windowScene else { return }
         Bartinter.install(in: scene, configuration: configuration)
+        apply(to: view.window?.rootViewController as? BartinterContainerController)
+    }
+
+    /// Forwards the current pause state to the installed controller. Separated so it is unit-testable without a UIWindowScene.
+    func apply(to container: BartinterContainerController?) {
+        container?.bartinter.isActive = isActiveTinting
     }
 }
