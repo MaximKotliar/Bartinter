@@ -3,6 +3,12 @@ import UIKit
 
 extension View {
     /// Tints the window's status bar based on the content behind it while this view is shown.
+    ///
+    /// - Parameter isActive: Set `false` to pause sampling and hold the current tint
+    ///   (e.g. while a video plays); set back to `true` to resume.
+    /// - Note: Status-bar tinting is a single, window-wide effect. If several views in the
+    ///   same window apply this modifier, they share one tint state and the most recent
+    ///   `isActive`/`configuration` wins — apply it once near the window's root.
     public func tintsStatusBar(_ configuration: Bartinter.Configuration = .default,
                                isActive: Bool = true) -> some View {
         background(BartinterInstallerView(configuration: configuration, isActive: isActive))
