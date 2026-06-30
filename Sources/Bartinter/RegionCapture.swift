@@ -155,3 +155,21 @@ extension RegionCapture {
         }
     }
 }
+
+// MARK: - NullSampler (fallback when no Metal device exists)
+
+extension RegionCapture {
+    /// Fallback used when no Metal device exists; never produces a luminance value.
+    static var disabled: NullSampler { NullSampler() }
+
+    @MainActor
+    final class NullSampler: LuminanceSampling {
+        func sampleLuminance(
+            of layer: CALayer,
+            rects: [CGRect],
+            completion: @escaping @MainActor (CGFloat?) -> Void
+        ) {
+            completion(nil)
+        }
+    }
+}
