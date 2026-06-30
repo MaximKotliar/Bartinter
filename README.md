@@ -1,51 +1,107 @@
-[![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/vsouza/awesome-ios)
-[![Version](https://img.shields.io/cocoapods/v/Bartinter.svg?style=flat-square)](http://cocoapods.org/pods/Bartinter)
-[![License](https://img.shields.io/cocoapods/l/Bartinter.svg?style=flat-square)](http://cocoapods.org/pods/Bartinter)
-[![Platform](https://img.shields.io/cocoapods/p/Bartinter.svg?style=flat-square)](http://cocoapods.org/pods/Bartinter)
-
 # Bartinter
-Status bar apperance manager that make your status bar readable by dynamically changing it's color depending on content behind.
-<p align="center">
-    <img src ="https://raw.githubusercontent.com/MaximKotliar/Bartinter/master/demo.gif" />
-</p>
 
-## Installation
-Add
+Dynamically tints the iOS status bar to stay readable over the content behind it.
 
-```ruby
-pod 'Bartinter'
-```
-to your podfile, and run
+![demo](demo.gif)
 
-```
-pod install
-```
+- iOS 15+ · Swift 6 · SPM
+- No method swizzling
+- Hybrid capture: GPU sampling via CARenderer + Metal on device, with an automatic `layer.render(in:)` CPU fallback (CARenderer is a no-op on the iOS simulator). Metal-backed Core Image averaging. Notch / Dynamic Island aware.
+- Light/Dark mode correct (`.lightContent` / `.darkContent`)
+- SwiftUI and UIKit APIs
 
-## Usage
+## Install
 
-Set "View controller-based status bar appearance" (UIViewControllerBasedStatusBarAppearance) to YES in your Info.plist. 
-Set ViewController's `updatesStatusBarAppearanceAutomatically = true`
+Xcode → **File → Add Package Dependencies** → `https://github.com/MaximKotliar/Bartinter`
 
-That's it.
+Set `UIViewControllerBasedStatusBarAppearance` to `YES` in Info.plist (the default).
 
-### Swizzling
-By default, bartinter swizzles a couple methods for your convenience. (see: `UIKitSwizzling.swift`)
-If you are not ok with method swizzling, you can disable it by following line: 
+## SwiftUI
+
 ```swift
-Bartinter.isSwizzlingEnabled = false
+ContentView()
+    .tintsStatusBar()
 ```
-Without swizzling you need to do some things manually: 
 
-Firstly, you need to provide `childViewControllerForStatusBarStyle`, in your ViewController subclass just add following: 
+With custom configuration or pause control:
+
 ```swift
-override var childViewControllerForStatusBarStyle: UIViewController? {
-    return statusBarUpdater
+// Custom threshold and sample rate
+PhotoDetailView()
+    .tintsStatusBar(Bartinter.Configuration(midPoint: 0.55, maxSampleRate: 30))
+
+// Pause sampling while a video plays, preserve last tint
+PlayerView()
+    .tintsStatusBar(isActive: autoTint)
+```
+
+## UIKit — app-wide
+
+Call once from your scene delegate; every screen benefits automatically:
+
+```swift
+func scene(_ scene: UIScene, willConnectTo session: UISceneSession,
+           options: UIScene.ConnectionOptions) {
+    guard let windowScene = scene as? UIWindowScene else { return }
+    // … build window / root …
+    Bartinter.install(in: windowScene)
 }
 ```
 
-Secondly, you need to decide, when you need to refresh status bar style, for example on tableView scroll, so add: 
+## UIKit — per screen
+
+For fine-grained control, own a `BartinterController` in each view controller:
+
 ```swift
-func scrollViewDidScroll(_ scrollView: UIScrollView) {
-    statusBarUpdater?.refreshStatusBarStyle()
+final class GalleryViewController: UIViewController {
+    private let bartinter = BartinterController()
+
+    override var childForStatusBarStyle: UIViewController? { bartinter }
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        addChild(bartinter)
+        bartinter.tint(self)              // start sampling this screen
+        bartinter.observe(collectionView) // re-sample on scroll (explicit opt-in)
+    }
 }
 ```
+
+Container VCs must forward the query:
+
+```swift
+final class TintingNavigationController: UINavigationController {
+    override var childForStatusBarStyle: UIViewController? { topViewController }
+}
+```
+
+## Manual control
+
+```swift
+bartinter.setNeedsStatusBarTintUpdate() // force a re-sample on the next display-link tick
+bartinter.isActive = false              // pause / resume sampling
+let style = bartinter.currentStyle      // .lightContent or .darkContent
+```
+
+## Configuration
+
+```swift
+public struct Configuration {
+    public var animationDuration: TimeInterval     // default: 0.2
+    public var animationType: UIStatusBarAnimation // default: .fade
+    public var midPoint: CGFloat                   // default: 0.6  — luminance threshold
+    public var antiFlickRange: CGFloat             // default: 0.08 — hysteresis band
+    public var maxSampleRate: Double               // default: 12   — samples/sec ceiling
+}
+
+// Change app-wide defaults once at launch (main actor):
+Bartinter.Configuration.default.midPoint = 0.6
+```
+
+## Known limitation
+
+Live server-composited content directly under the bar — an active `UIVisualEffectView` blur or an `AVPlayerLayer` video — is not captured. `CARenderer` (and `layer.render(in:)`) render the layer model tree, not the composited output. Status-bar-region content is almost always opaque backgrounds, images, or gradients, so this is rarely an issue in practice.
+
+## Migration from 0.0.x
+
+See [MIGRATION.md](MIGRATION.md).
