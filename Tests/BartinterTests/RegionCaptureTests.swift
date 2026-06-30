@@ -27,3 +27,22 @@ final class RegionCaptureTests: XCTestCase {
         XCTAssertLessThan(l, 0.35) // linearized mid-gray ~0.21
     }
 }
+
+@MainActor
+final class RegionCaptureCARendererTests: XCTestCase {
+    func testCapturesSolidRedLayerLuminance() throws {
+        guard let capture = RegionCapture() else { throw XCTSkip("No Metal device") }
+        let layer = CALayer()
+        layer.frame = CGRect(x: 0, y: 0, width: 200, height: 60)
+        layer.backgroundColor = UIColor.red.cgColor
+
+        let exp = expectation(description: "luminance")
+        var result: CGFloat?
+        capture.sampleLuminance(of: layer, rects: [layer.bounds]) { value in
+            result = value
+            exp.fulfill()
+        }
+        wait(for: [exp], timeout: 5)
+        XCTAssertEqual(result ?? -1, 0.2126, accuracy: 0.1) // red
+    }
+}
