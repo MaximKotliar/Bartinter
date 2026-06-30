@@ -1,9 +1,8 @@
 import Foundation
+import UIKit
 
 /// Bartinter namespace. Expanded in later tasks.
 public enum Bartinter {}
-
-import UIKit
 
 extension Bartinter {
     /// Installs app-wide status bar tinting by wrapping the scene's key-window root.
